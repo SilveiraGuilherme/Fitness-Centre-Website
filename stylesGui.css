@@ -1,0 +1,192 @@
+/* Global Styles */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/crossfitBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #4a4a4a;
+    padding: 10px 20px;
+    position: sticky;
+    /* Ensures the navbar remains at the top */
+    top: 0;
+    z-index: 1030;
+    /* Keeps navbar above other elements */
+}
+
+.navbar-brand {
+    color: orange;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ed9121;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    gap: 15px;
+    /* Space between navbar items */
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    /* Prevents content from being pushed down */
+    top: 100%;
+    /* Positions the dropdown directly below the navbar */
+    left: 0;
+    right: 0;
+    background-color: #4a4a4a;
+    /* Match navbar background */
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Adds a subtle shadow for depth */
+}
+
+.navbar-nav .dropdown-item {
+    color: #ed9121;
+    padding: 10px 20px;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #ed9121;
+    color: white;
+}
+
+/* Dropdown Toggle Arrow */
+.dropdown-toggle::after {
+    color: #ed9121;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    color: orange;
+}
+
+.welcome-section p {
+    font-size: 1.25rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+}
+
+.benefits-section h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.benefits-section h5 {
+    color: orange;
+    margin-top: 10px;
+}
+
+.benefits-section p {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.benefits-section img.benefit-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption h3 {
+    color: orange;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.carousel-caption p {
+    color: white;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 50px 20px;
+}
+
+.testimonials-section h2 {
+    color: orange;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blockquote {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    font-style: italic;
+    color: #e5e7eb;
+    text-align: center;
+}
+
+.blockquote-footer {
+    color: #ed9121;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #e5e7eb;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-info img {
+    width: 24px;
+    height: 24px;
+}

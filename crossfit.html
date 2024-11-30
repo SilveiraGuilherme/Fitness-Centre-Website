@@ -1,140 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
-    <link rel="stylesheet" href="../style.css" />
-  </head>
-  <body>
-    <header>
-			<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #696969;">
-				<a class="navbar-brand" href="index.html" aria-label="Home">
-				</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html" style="color: #ed9121;" aria-label="HomePage">Home</a>
-						</li>
-						<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" style="color: #ed9121;" id="modalitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Modalities">
-							Modalities
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="modalitiesDropdown">
-							<li><a class="dropdown-item" style="color: #ed9121;" href="#">CrossFit</a></li>
-							<li><a class="dropdown-item" style="color: #ed9121;" href="#">Swimming</a></li>
-							<li><a class="dropdown-item" style="color: #ed9121;" href="#">Open Gym</a></li>
-						</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="plans.html" style="color: #ed9121;" aria-label="Plans">Plans</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html" style="color: #ed9121;" aria-label="ContactUs">Contact Us</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-    <main>
-      <section class="hero">
-        <aside>
-          <h1>Boost your workouts</h1>
-          <p>
-            Once you get well equipped, the sky is the limit. Check out our
-            products and excel in your workouts.
-            <em>We are Go Training.</em>
-          </p>
-          <div class="button">
-            <a href="products.html#products">Products</a>
-          </div>
-        </aside>
-        <div>
-          <img
-            src="../images/man-doing-pull-ups.jpg"
-            alt="A shirtless man doing pull ups."
-          />
-        </div>
-      </section>
-      <section id="products" class="categories">
-        <h2>Choose a category</h2>
-        <ul>
-          <li>
-            <figure>
-              <figcaption><a href="#">Clothing</a></figcaption>
-              <a href="#">
-                <img
-                  src="../images/clothing.jpg"
-                  alt="A couple running together along the street."
-                />
-              </a>
-            </figure>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossFit - Go Training</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="stylesGui.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-dark fixed-top" style="background-color: #4a4a4a;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" aria-label="Home">Go Training</a>
+        <ul class="navbar-nav ms-auto flex-row gap-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" aria-label="HomePage">Home</a>
           </li>
-          <li>
-            <figure>
-              <figcaption><a href="#">Shoes</a></figcaption>
-              <a href="#">
-                <img
-                  src="../images/shoes.jpg"
-                  alt="A close-up at someone's shoes as they put a weight on a barbell."
-                />
-              </a>
-            </figure>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="modalitiesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Modalities
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="modalitiesDropdown">
+              <li><a class="dropdown-item" href="crossfit.html">CrossFit</a></li>
+              <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+              <li><a class="dropdown-item" href="gym.html">Open Gym</a></li>
+            </ul>
           </li>
-          <li>
-            <figure>
-              <figcaption><a href="#">Accessories</a></figcaption>
-              <a href="#">
-                <img
-                  src="../images/accessories.jpg"
-                  alt="A shirtless man wearing workout gloves showing his hands to the camera."
-                />
-              </a>
-            </figure>
+          <li class="nav-item">
+            <a class="nav-link" href="plans.html" aria-label="Plans">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" aria-label="ContactUs">Contact Us</a>
           </li>
         </ul>
-      </section>
-      <section class="quote">
-        <blockquote>
-          <p>Go the extra mile. It's never crowded.</p>
-        </blockquote>
-        <cite>-Wayne Dyer</cite>
-      </section>
-      <section class="call-to-action">
-        <div>
-          <div>
-            <h3>Are you getting the best experience?</h3>
-            <p>We have lots of things to offer. Take a look at our plans!</p>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Welcome Section -->
+    <section class="welcome-section text-center py-5">
+      <div class="container">
+        <h1>Welcome to CrossFit Training</h1>
+        <p class="lead">Your journey to strength, endurance, and fitness begins here.</p>
+      </div>
+    </section>
+
+    <!-- CrossFit Benefits -->
+    <section class="benefits-section py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Why Choose CrossFit?</h2>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="images/crossStrength.png" alt="Strength Icon" class="benefit-icon mb-3">
+            <h5>Strength & Power</h5>
+            <p>Build a solid foundation of strength and resilience with high-intensity training.</p>
           </div>
-          <div class="button">
-            <a href="../pages/plans.html">Plans</a>
+          <div class="col-md-4 text-center">
+            <img src="images/crossCardio.png" alt="Endurance Icon" class="benefit-icon mb-3">
+            <h5>Cardio Endurance</h5>
+            <p>Enhance your stamina and endurance with dynamic workouts.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="images/crossCommunity.png" alt="Community Icon" class="benefit-icon mb-3">
+            <h5>Community Support</h5>
+            <p>Be part of a supportive and motivating group of fitness enthusiasts.</p>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright &copy; 2022</p>
-      <div class="contact-info">
-        <a href="https://www.instagram.com/" target="_blank">
-          <img src="../images/logos/instagram-logo.png" alt="Instagram logo" />
-        </a>
-        <a href="https://web.whatsapp.com/" target="_blank">
-          <img src="../images/logos/whats-app-logo.png" alt="WhatsApp logo" />
-        </a>
-        <address>
-          <a href="https://www.google.com.br/maps" target="_blank">
-            <img
-              src="../images/logos/pin-location.png"
-              alt="Pin location figure"
-            />
-            <span> 500 Main Street<br />São Paulo SP - Brazil </span>
-          </a>
-        </address>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- Carousel -->
+    <div id="crossfitCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/people-doing-squats.jpg" class="d-block w-100" alt="CrossFit Image 1">
+          <div class="carousel-caption">
+            <h3>Push Your Limits</h3>
+            <p>Discover your inner strength.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/man-doing-push-ups.jpg" class="d-block w-100" alt="CrossFit Image 2">
+          <div class="carousel-caption">
+            <h3>Stay Fit</h3>
+            <p>High-intensity workouts for real results.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#crossfitCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#crossfitCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">What Our Members Say</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <blockquote class="blockquote text-center">
+              <p>"CrossFit changed my life. I feel stronger and more confident every day!"</p>
+              <footer class="blockquote-footer">John Doe</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-6 mb-4">
+            <blockquote class="blockquote text-center">
+              <p>"The community at Go Training is so welcoming. I never felt alone in my fitness journey."</p>
+              <footer class="blockquote-footer">Jane Smith</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Go Training | All rights reserved</p>
+    <div class="contact-info">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="images/logos/instagram-logo.png" alt="Instagram logo" />
+      </a>
+      <a href="https://web.whatsapp.com/" target="_blank">
+        <img src="images/logos/whats-app-logo.png" alt="WhatsApp logo" />
+      </a>
+      <a href="https://www.google.com/maps" target="_blank">
+        <img src="images/logos/pin-location.png" alt="Pin location figure" />
+      </a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
