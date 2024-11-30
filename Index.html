@@ -1,57 +1,160 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
-<head>
-  <title>Go Training</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #696969;">
-      <a class="navbar-brand" href="index.html" aria-label="Home">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" style="color: #ed9121;" aria-label="HomePage">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" style="color: #ed9121;" id="modalitiesDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" aria-label="Modalities">
-              Modalities
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="modalitiesDropdown">
-              <li><a class="dropdown-item" style="color: #ed9121;" href="#">CrossFit</a></li>
-              <li><a class="dropdown-item" style="color: #ed9121;" href="#">Swimming</a></li>
-              <li><a class="dropdown-item" style="color: #ed9121;" href="#">Open Gym</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="plans.html" style="color: #ed9121;" aria-label="Plans">Plans</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html" style="color: #ed9121;" aria-label="ContactUs">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <div class="intro d-flex flex-column justify-content-center align-items-center text-center p-5">
-    <h1>Are you ready to discover another version of yourself?</h1>
-    <h2>You just found the perfect place for it!</h2>
-    <p>Here at Go Training we help you transform your body together with your mindset. All this in search of a healthier
-      and more balanced life.</br>
-      Dive into this discovery! Our team is ready to assist you.</p>
-  </div>
-
+	<head>
+		<title>Go Training</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="external.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-dark" >
+					<a class="navbar-brand" href="index.html" aria-label="Home">
+					</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html" style="color: #ed9121;" aria-label="HomePage">Home</a>
+							</li>
+							<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" style="color: #ed9121;" id="modalitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Modalities">
+								Modalities
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="modalitiesDropdown">
+								<li><a class="dropdown-item" style="color: #ed9121;" href="#">CrossFit</a></li>
+								<li><a class="dropdown-item" style="color: #ed9121;" href="#">Swimming</a></li>
+								<li><a class="dropdown-item" style="color: #ed9121;" href="#">Open Gym</a></li>
+							</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="plans.html" style="color: #ed9121;" aria-label="Plans">Plans</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html" style="color: #ed9121;" aria-label="ContactUs">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+            <div class="intro d-flex flex-column justify-content-center align-items-center text-center p-5">
+            <video autoplay muted loop>
+                <source src="exercising.mp4" type="video/mp4">
+            </video>
+				<h1>Are you ready to discover another version of yourself?</h1>
+				<h2>You just found the perfect place for it!</h2>
+                </br>   
+                </br> 
+				<p>Here at Go Training we help you transform your body together with your mindset. All this in search of a healthier and more balanced life.</br>
+				Dive into this discovery! Our team is ready to assist you.</p>
+			</div>
+			<div class="container">
+			<div class="modalities justify-content-center align-items-center text-center p-5">
+				<h3 style="background-color: #ed9121; color: white;">Here is what we offer</h3>
+			</div>
+					<div class="categories">
+						<img src="fitness-trainers.jpg" alt="trainers" class="categories-image">
+						<div class="text">
+							<h5>Fitness Instructors</h5>
+							<p>Our team is ready to ensure that any physical activity is carried out safely.</br> 
+							Your workouts will be personalized to meet your needs and any limitations.</p>
+						</div>
+					</div>
+					<div class="categories reverse">
+						<img src="crossfit.jpg" alt="crossFit" class="categories-image">
+						<div class="text">
+							<h5>CrossFit Classes</h5>
+							<p>Reach new physical heights and improve your resistance with dynamic and</br>
+							intense training. We combine gymnastics exercises, weight lifting</br>
+							and much more, in a suitable, complete and efficient format.</p>
+						</div>
+					</div>
+					<div class="categories">
+						<img src="swimming.jpg" alt="swimming" class="categories-image">
+						<div class="text">
+							<h5>Swimming Classes</h5>
+							<p>Improve your physical conditioning with our swimming classes.</br> 
+							Taught by qualified teachers, we offer complete training involving strength,</br>
+							resistance and flexibility. Furthermore, as it is a low-impact activity,</br> 
+							it is of great value for people with injuries.</p>
+						</div>
+					</div>
+					<div class="categories reverse">
+						<img src="gym.jpg" alt="gym" class="categories-image">
+						<div class="text">
+							<h5>Open Gym</h5>
+							<p>Ideal for those who prefer the freedom to train at their own pace.</br>
+							Our modern and complete facilities will guarantee the best environment</br>
+							for your training. Our team of qualified trainers will give you</br>
+							all support you need when necessary.</p>
+						</div>
+					</div>					
+			<div class="card-section justify-content-center align-items-center text-center p-5">
+				<h3 class="tips" style="background-color: #ed9121; color: white;">Some tips for a healthier routine</h3>
+				<div class="row justify-content-center">
+					<div class="col-md-4">
+						<div class="card">
+							<img src="water.jpg" class="card-img-top" alt="girl drinking water">
+							<div class="card-body">
+								<h5 class="card-title">Drink Water</h5>
+								<p class="card-text">Drink at least two liters of water a day. 
+								This will help your body maintain a regulated body temperature.
+								<div class="collapse" id="moreText1">
+								It will also improve digestion and skin appearance, 
+								eliminate toxins from the body, among other benefits.
+								Always keep your body hydrated and observe the magic happening.
+								</div>
+								</p>
+								<button class="btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#moreText1" aria-expanded="false" aria-controls="moreText1">
+								Read More
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+							<img src="sleep.jpg" class="card-img-top" alt="someone sleeping">
+							<div class="card-body">
+								<h5 class="card-title">Good Sleep Routine</h5>
+								<p class="card-text">A well-regulated sleep helps with physical and mental well-being. 
+								When we sleep well, the body recovers itself.
+								<div class="collapse" id="moreText2">
+								A good sleep routine improves our mood, strengths our imunity, our ability to remember and concentrate,
+								as well as reducing the risk of diseases such as diabetes and high blood pressure.
+								</div>
+								</p>
+								<button class="btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#moreText2" aria-expanded="false" aria-controls="moreText2">
+								Read More
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+							<img src="fun.jpg" class="card-img-top" alt="people having fun">
+							<div class="card-body">
+								<h5 class="card-title">Take Your Mind Off Things</h5>
+								<p class="card-text">Look for activities or something that can distract your mind, that are pleasurable for you.
+								You can do it alone or with a group of friends.
+								<div class="collapse" id="moreText3">
+								This will bring benefits such as reducing day-to-day stress, improving mood and preventing mental illnesses such as depression.
+								Do not forget: Healthy mind, healthy body!
+								</div>
+								</p>
+								<button class="btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#moreText3" aria-expanded="false" aria-controls="moreText3">
+								Read More
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
   <!-- Footer -->
   <footer>
     <p>&copy; 2024 Go Training | All rights reserved</p>
@@ -67,6 +170,9 @@
       </a>
     </div>
   </footer>
-</body>
+    
+  	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>	 
+  	<script src="JS.js"></script>
 
+  </body>
 </html>
