@@ -51,7 +51,6 @@ main {
 
 .categories-image {
     padding: 10px;
-    display: block;
     object-fit: cover;
     height: 150px;
     border-radius: 20px;
@@ -73,6 +72,12 @@ main {
     margin-right: 10px;
     margin-left: 10px;
 }
+
+.card card-body{
+    display: flex;
+    flex-direction: column; 
+}
+
 
 .card:hover {
     transform: scale(1.05);
