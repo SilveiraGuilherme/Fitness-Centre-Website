@@ -1,0 +1,124 @@
+.logo{
+    width: 120px;
+    height: 80px;
+    display: block;
+}
+
+
+
+.intro {
+    background-color: black;
+    position: relative;
+    z-index: 1; /* text on top of the video */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+/* Video Style*/
+.intro video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* video is covering the div area */
+    z-index: -1; /* video behind the text */
+}
+
+.intro h1,
+.intro h2,
+.intro p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+.categories {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.categories.reverse {
+    flex-direction: row-reverse;
+}
+
+.categories-image{
+    padding: 10px;
+    display: block;  
+    object-fit: cover; 
+    height: 150px; 
+    border-radius: 20px; 
+}
+
+.card-section{
+    margin-top: 50px; 
+}
+
+.tips{
+    margin-bottom: 50px;
+}
+
+.card{
+    width: 18rem; 
+    display: flex;
+    flex-direction: column; 
+    transition: transform 0.3s ease; 
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card:hover{
+    transform: scale(1.05); 
+    background-color: #ed9121;
+}
+
+.card-img-top{
+    padding: 10px;
+    display: block;  
+    object-fit: cover; 
+    height: 150px; 
+    border-radius: 20px; 
+}
+
+.btn-light:hover{
+    background-color: #ed9121;
+    border-color: #ed9121;     
+    color: white;              
+}
+
+.products h3{
+    background-color: #ff7014; 
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.products img{
+    height: 450px;
+}
+
+footer {
+    background-color: black;
+    color: #e5e7eb;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-info img {
+    width: 24px;
+    height: 24px;
+}
