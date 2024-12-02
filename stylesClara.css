@@ -1,9 +1,11 @@
+main {
+    flex: 1;
+}
+
 .logo {
     width: 100px;
     display: block;
 }
-
-
 
 .intro {
     background-color: black;
