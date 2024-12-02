@@ -49,6 +49,7 @@
 
 .categories-image {
     padding: 10px;
+    display: block;
     object-fit: cover;
     height: 150px;
     border-radius: 20px;
