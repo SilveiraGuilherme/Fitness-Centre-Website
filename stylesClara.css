@@ -57,6 +57,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;  
+    overflow: hidden;
 }
 
 .modalities{
@@ -86,67 +87,46 @@
     width: 250px;
     padding: 10px;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
     height: 150px;
-    border-radius: 20px;
 }
 
 /*tips section*/
-.card-section {
+.health-routine {
     margin-top: 50px;
     justify-content: center; 
     align-items: center;  
     text-align: center;
 }
 
-.tips {
-    margin-bottom: 50px;
+.tips{
+    padding-bottom: 50px;
 }
 
-.card {
-    width: 18rem;
+.health-card{
     display: flex;
     flex-wrap: wrap; 
     flex-direction: column;
-    transition: transform 0.3s ease;
-    gap: 20px;
+    gap: 10px;
     max-height: 700px;
+    margin: 10px auto;
 }
 
-.card-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.card:hover {
+.health-card:hover {
     transform: scale(1.05);
-    background-color: #ed9121;
+    color:#ff7014;
 }
 
 .card-img-top {
     padding: 10px;
+    width: 250px;
     display: block;
     object-fit: cover;
     height: 150px;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 
-.btn-light {
-    background-color: lightgrey;
-    border-color: transparent;
-    color: #000; 
-    border-radius: 10px;
-}
-
-.btn-light:hover {
-    background-color: #ed9121;
-    border-color: #ed9121;
-    color: white;
-}
-
-.collapse {
-    margin-top: 30px; 
-}
 
 /*products section*/
 .products h3 {
