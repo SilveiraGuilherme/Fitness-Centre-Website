@@ -1,11 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: inherit;
-}
-
 html,
 body {
     height: 100%;
@@ -24,10 +16,6 @@ main {
 }
 
 /*header*/
-header {
-    background-color: black;
-}
-
 .navbar .nav-item .nav-link {
     color: #ff7014;
 }
@@ -438,22 +426,6 @@ aside {
     height: auto;
     border: 3px solid #3882f6;
     border-radius: 10px;
-}
-
-.p-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: baseline;
-}
-
-.p-button a {
-    background-color: #ff7014;
-    color: #f9faf8;
-    border-radius: 5px;
-    padding: 0.5em 2em;
-    font-weight: bold;
-    text-align: center;
 }
 
 .plans-container {
