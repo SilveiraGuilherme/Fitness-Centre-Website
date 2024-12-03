@@ -1,55 +1,88 @@
-main {
-    flex: 1;
-}
 
 .logo {
     width: 100px;
     display: block;
 }
 
-.intro {
+/*header*/
+.navbar .nav-item .nav-link {
+    color: #ff7014; 
+}
+
+.navbar .dropdown-menu {
+    background-color: black;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: #ff7014;
+}
+
+/*intro content*/
+.introduction {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
     background-color: black;
     position: relative;
-    z-index: 1;
-    /* text on top of the video */
+    z-index: 1; /* to put the text on top of the video */
     color: white;
     text-align: center;
-    padding: 5px;
     margin-bottom: 50px;
 }
 
-/* Video Style*/
-.intro video {
+/* Intro video style*/
+.introduction video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* video is covering the div area */
-    z-index: -1;
-    /* video behind the text */
+    object-fit: cover;  /* video to cover the div area */
+    z-index: -1;  /* video to be behind the welcoming text */
 }
 
-.intro h1,
-.intro h2,
-.intro p {
+.introduction h1,
+.introduction h2,
+.introduction p {
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 4px rgba(158, 153, 153, 0.6);
 }
 
+/*main content style*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
 
+.modalities{
+    text-align: center; 
+}
+  
 .categories {
     display: flex;
     align-items: center;
-    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.categories h5{
+    color:#ff7014;
 }
 
 .categories.reverse {
     flex-direction: row-reverse;
+    padding-bottom: 50px;
+}
+
+.categories.reverse h5{
+    color:#ff7014;
 }
 
 .categories-image {
+    width: 250px;
     padding: 10px;
     display: block;
     object-fit: cover;
@@ -57,8 +90,12 @@ main {
     border-radius: 20px;
 }
 
+/*tips section*/
 .card-section {
     margin-top: 50px;
+    justify-content: center; 
+    align-items: center;  
+    text-align: center;
 }
 
 .tips {
@@ -68,10 +105,16 @@ main {
 .card {
     width: 18rem;
     display: flex;
+    flex-wrap: wrap; 
     flex-direction: column;
     transition: transform 0.3s ease;
-    margin-right: 10px;
-    margin-left: 10px;
+    gap: 20px;
+    max-height: 700px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
@@ -87,23 +130,51 @@ main {
     border-radius: 20px;
 }
 
+.btn-light {
+    background-color: lightgrey;
+    border-color: transparent;
+    color: #000; 
+    border-radius: 10px;
+}
+
 .btn-light:hover {
     background-color: #ed9121;
     border-color: #ed9121;
     color: white;
 }
 
+.collapse {
+    margin-top: 30px; 
+}
+
+/*products section*/
 .products h3 {
-    background-color: #ff7014;
-    color: white;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.products img {
-    height: 450px;
+.carousel-inner {
+    height: 500px;
 }
 
+.carousel-inner img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+  
+.carousel-item-previous,
+.caroulsel-item-next,
+.carousel-item-active {
+    opacity: 1; /* make sure images will change smoothly*/
+}
+
+/*footer*/
 footer {
     background-color: black;
     color: #e5e7eb;
