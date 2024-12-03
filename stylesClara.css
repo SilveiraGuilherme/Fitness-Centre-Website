@@ -38,8 +38,7 @@ main {
     text-align: center;
     background-color: black;
     position: relative;
-    z-index: 1;
-    /* to put the text on top of the video */
+    z-index: 1; /* to put the text on top of the video */
     color: white;
     text-align: center;
     margin-bottom: 50px;
@@ -52,10 +51,8 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* video to cover the div area */
-    z-index: -1;
-    /* video to be behind the welcoming text */
+    object-fit: cover; /* video to cover the div area */
+    z-index: -1; /* video to be behind the welcoming text */
 }
 
 .introduction h1,
@@ -112,6 +109,10 @@ main {
     text-align: center;
 }
 
+.health-routine h3{
+    padding-bottom: 5px;
+}
+
 .tips{
     padding-bottom: 50px;
 }
@@ -121,13 +122,20 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
+    height: 100%;
     max-height: 700px;
     margin: 10px auto;
+    border: 1px solid #ff7014;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
 }
 
 .health-card:hover {
     transform: scale(1.05);
-    color:#ff7014;
+    background-color:#ff7014;
 }
 
 .card-img-top {
@@ -140,15 +148,16 @@ main {
 }
 
 .btn-light {
-    background-color: lightgrey;
     border-color: transparent;
     color: #000; 
     border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease !important;
 }
 
 .btn-light:hover {
-    background-color: #ed9121;
-    border-color: #ed9121;
+    background-color: #ff7014 !important;
+    border-color: #ff7014 !important;
     color: white;
 }
 
@@ -181,11 +190,11 @@ main {
 .carousel-item-previous,
 .caroulsel-item-next,
 .carousel-item-active {
-    opacity: 1;
-    /* make sure images will change smoothly*/
+    opacity: 1; /* make sure images will change smoothly*/
 }
 
 /*swimming page styles*/
+/*description */
 .swimming-class img {
     height: 300px;
     width: 100%;
