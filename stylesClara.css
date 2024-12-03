@@ -82,7 +82,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
 }
 
 .modalities {
@@ -124,11 +124,11 @@ header {
     text-align: center;
 }
 
-.tips{
+.tips {
     padding-bottom: 50px;
 }
 
-.health-card{
+.health-card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -139,7 +139,7 @@ header {
 
 .health-card:hover {
     transform: scale(1.05);
-    color:#ff7014;
+    color: #ff7014;
 }
 
 .card-img-top {
@@ -154,7 +154,7 @@ header {
 .btn-light {
     background-color: lightgrey;
     border-color: transparent;
-    color: #000; 
+    color: #000;
     border-radius: 10px;
 }
 
@@ -165,7 +165,7 @@ header {
 }
 
 .collapse {
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 
 
@@ -331,6 +331,51 @@ footer p {
 }
 
 /* -----Plans Page----- */
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.p-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    height: 70vh;
+    gap: 10px;
+}
+
+.p-container h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ff7014;
+}
+
+.p-container p {
+    font-size: 18px;
+    color: #212529;
+    font-weight: normal;
+}
+
+.p-container em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.p-container>div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.p-container img {
+    width: 100%;
+    height: auto;
+}
 
 /* Plans Cards */
 .p-categories {
