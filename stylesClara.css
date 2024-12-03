@@ -12,6 +12,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -26,6 +27,10 @@ main {
 /*header*/
 header {
     background-color: black;
+}
+
+.navbar {
+    padding: 16px 32px;
 }
 
 .navbar .nav-item .nav-link {
@@ -342,7 +347,291 @@ footer p {
     height: 24px;
 }
 
-/* -----Plans Page----- */
+/* Ensure images scale properly */
+.p-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add subtle shadow for depth */
+}
+
+/* Adjust padding for smaller screens */
+.p-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    /* Allow flexible height for responsiveness */
+    margin-top: 62px;
+}
+
+.p-container aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* Add spacing below text section for small screens */
+}
+
+.p-container h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ff7014;
+}
+
+.p-container p {
+    font-size: 18px;
+    color: #212529;
+    font-weight: normal;
+}
+
+.p-container em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Plans Section Cards */
+.p-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10%;
+    gap: 20px;
+}
+
+.p-categories h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    text-align: center;
+}
+
+.list-plans {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    width: 100%;
+}
+
+.item-plan {
+    display: flex;
+    /* Enable Flexbox for the card */
+    flex-direction: column;
+    /* Stack content vertically */
+    justify-content: space-between;
+    /* Ensure even spacing with the button at the bottom */
+    flex: 1;
+    min-width: 280px;
+    max-width: 300px;
+    border: 2px solid #ff7014;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9fafb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 20px;
+    /* Add spacing between cards */
+}
+
+.item-plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item-plan h3 {
+    font-size: 24px;
+    color: #ff7014;
+    margin: 15px 0;
+    position: relative;
+}
+
+.item-plan h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #ff7014;
+    margin: 10px auto;
+}
+
+.item-plan ul {
+    flex-grow: 1;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.item-plan ul li {
+    font-size: 14px;
+    /* Adjust text size for smaller screens */
+    color: #1f2937;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.item-plan ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff7014;
+    border-radius: 50%;
+}
+
+.p-button {
+    margin-top: 10px;
+}
+
+.p-button a {
+    display: inline-block;
+    background-color: #ff7014;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.p-button a:hover {
+    background-color: #e85d0a;
+}
+
+/* Quote Section */
+.quote {
+    background-color: #ff7014;
+    color: white;
+    text-align: center;
+    padding: 30px 10%;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    /* Adjusted for smaller screens */
+}
+
+.quote blockquote {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.quote cite {
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    display: block;
+}
+
+/* Responsive Adjustments */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .p-container {
+        flex-direction: column;
+        /* Stack text and image for better alignment */
+        align-items: center;
+        /* Center the content horizontally */
+        text-align: center;
+        /* Center-align the text */
+        gap: 20px;
+        /* Add some spacing between sections */
+    }
+
+    .p-container aside {
+        width: 100%;
+        /* Ensure the text section spans full width */
+        text-align: center;
+        /* Center-align the text inside */
+    }
+
+    .p-button {
+        margin: 0 auto;
+    }
+
+    .list-plans {
+        display: flex;
+        flex-direction: column;
+        /* Stack cards vertically */
+        align-items: center;
+        /* Center cards horizontally */
+        gap: 20px;
+        /* Add spacing between cards */
+    }
+
+    .item-plan {
+        width: 100%;
+        /* Cards take full width of the container */
+        max-width: 300px;
+        /* Set a reasonable max width */
+        margin: 0 auto;
+        /* Center cards horizontally */
+        text-align: center;
+        /* Center-align the card content */
+    }
+
+    .quote {
+        margin-top: 40px;
+        padding: 20px;
+        font-size: 16px;
+        /* Adjust quote text size */
+        text-align: center;
+        /* Center-align the quote */
+    }
+}
+
+@media (max-width: 768px) {
+    .p-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .p-container aside,
+    /* Text Section */
+    .p-container div {
+        /* Image Section */
+        width: 100%;
+        /* Ensure items take full width */
+    }
+
+    .p-categories {
+        padding: 10px;
+    }
+
+    .p-button {
+        margin: 0 auto;
+    }
+
+    .item-plan {
+        margin: 10px auto;
+        max-width: 300px;
+    }
+
+    .quote blockquote {
+        font-size: 14px;
+    }
+}
+
+
+
+/* -----Plans Page-----
 
 aside {
     flex: 1;
@@ -389,7 +678,7 @@ aside {
     height: auto;
 }
 
-/* Plans Cards */
+/* Plans Cards
 .p-categories {
     display: flex;
     padding: 0 15%;
