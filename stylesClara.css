@@ -19,12 +19,12 @@ main {
     flex: 1;
 }
 
+/*header*/
 .logo {
     width: 100px;
     display: block;
 }
 
-/*header*/
 header {
     background-color: black;
 }
