@@ -1,3 +1,14 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
 
 .logo {
     width: 100px;
@@ -6,7 +17,7 @@
 
 /*header*/
 .navbar .nav-item .nav-link {
-    color: #ff7014; 
+    color: #ff7014;
 }
 
 .navbar .dropdown-menu {
@@ -20,14 +31,15 @@
 /*index page styles*/
 /*intro content*/
 .introduction {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: black;
     position: relative;
-    z-index: 1; /* to put the text on top of the video */
+    z-index: 1;
+    /* to put the text on top of the video */
     color: white;
     text-align: center;
     margin-bottom: 50px;
@@ -40,8 +52,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* video to cover the div area */
-    z-index: -1;  /* video to be behind the welcoming text */
+    object-fit: cover;
+    /* video to cover the div area */
+    z-index: -1;
+    /* video to be behind the welcoming text */
 }
 
 .introduction h1,
@@ -57,21 +71,20 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;  
-    overflow: hidden;
 }
 
-.modalities{
-    text-align: center; 
+.modalities {
+    text-align: center;
 }
-  
+
 .categories {
     display: flex;
     align-items: center;
     padding-bottom: 50px;
 }
 
-.categories h5{
-    color:#ff7014;
+.categories h5 {
+    color: #ff7014;
 }
 
 .categories.reverse {
@@ -79,8 +92,8 @@
     padding-bottom: 50px;
 }
 
-.categories.reverse h5{
-    color:#ff7014;
+.categories.reverse h5 {
+    color: #ff7014;
 }
 
 .categories-image {
@@ -94,8 +107,8 @@
 /*tips section*/
 .health-routine {
     margin-top: 50px;
-    justify-content: center; 
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -105,7 +118,7 @@
 
 .health-card{
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
     max-height: 700px;
@@ -124,7 +137,23 @@
     object-fit: cover;
     height: 150px;
     border-radius: 20px;
-    margin-bottom: 10px;
+}
+
+.btn-light {
+    background-color: lightgrey;
+    border-color: transparent;
+    color: #000; 
+    border-radius: 10px;
+}
+
+.btn-light:hover {
+    background-color: #ed9121;
+    border-color: #ed9121;
+    color: white;
+}
+
+.collapse {
+    margin-top: 30px; 
 }
 
 
@@ -139,8 +168,8 @@
 }
 
 .carousel-inner img {
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -148,19 +177,21 @@
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
-  
+
 .carousel-item-previous,
 .caroulsel-item-next,
 .carousel-item-active {
-    opacity: 1; /* make sure images will change smoothly*/
+    opacity: 1;
+    /* make sure images will change smoothly*/
 }
 
 /*swimming page styles*/
-.swimming-class img{
+.swimming-class img {
     height: 300px;
-    width:100%;
+    width: 100%;
 }
-.swimming-description h3{
+
+.swimming-description h3 {
     padding-top: 30px;
     text-align: center;
 }
@@ -168,18 +199,18 @@
 /*types of strokes*/
 .card-swimming {
     margin-top: 50px;
-    justify-content: center; 
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.strokes{
+.strokes {
     padding-bottom: 50px;
 }
 
 .strcards {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
     max-height: 700px;
@@ -188,7 +219,7 @@
 
 .strcards:hover {
     transform: scale(1.05);
-    color:#ff7014;
+    color: #ff7014;
 }
 
 .stroke-img-top {
@@ -203,11 +234,11 @@
 
 
 /*age group division*/
-.class-division h3{
+.class-division h3 {
     text-align: center;
     padding-bottom: 50px;
 }
-  
+
 .types {
     display: flex;
     align-items: center;
@@ -216,11 +247,12 @@
 
 .summary {
     text-align: left;
-    width: 75%; 
-    padding-left: 10px; 
+    width: 75%;
+    padding-left: 10px;
 }
-.summary h5{
-    color:#ff7014;
+
+.summary h5 {
+    color: #ff7014;
     margin-bottom: 10px;
 }
 
