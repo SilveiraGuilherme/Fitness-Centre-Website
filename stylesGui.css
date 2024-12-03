@@ -21,53 +21,29 @@ main {
 }
 
 /* Navbar Styling */
-.navbar {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 20px;
-    position: sticky;
-    /* Ensures the navbar remains at the top */
-    top: 0;
-    z-index: 1030;
-    /* Keeps navbar above other elements */
+.logo {
+    width: 100px;
+    display: block;
 }
 
-.navbar-brand {
-    color: orange;
-    font-weight: bold;
-}
-
-.nav-link {
-    color: #ed9121;
-    font-weight: bold;
-}
-
-.navbar-nav {
-    gap: 15px;
-    /* Space between navbar items */
-}
-
-.navbar-nav .dropdown-menu {
-    position: absolute;
-    /* Prevents content from being pushed down */
-    top: 100%;
-    /* Positions the dropdown directly below the navbar */
-    left: 0;
-    right: 0;
+header {
     background-color: black;
-    /* Match navbar background */
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    /* Adds a subtle shadow for depth */
 }
 
-.navbar-nav .dropdown-item {
-    color: #ed9121;
-    padding: 10px 20px;
+.navbar {
+    padding: 16px 32px;
 }
 
-.navbar-nav .dropdown-item:hover {
-    background-color: #ed9121;
-    color: white;
+.navbar .nav-item .nav-link {
+    color: #ff7014;
+}
+
+.navbar .dropdown-menu {
+    background-color: black;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: #ff7014;
 }
 
 /* Dropdown Toggle Arrow */
