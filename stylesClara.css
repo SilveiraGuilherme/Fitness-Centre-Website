@@ -17,6 +17,7 @@
     color: #ff7014;
 }
 
+/*index page styles*/
 /*intro content*/
 .introduction {
     display: flex; 
@@ -53,8 +54,8 @@
 /*main content style*/
 .container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;  
 }
 
@@ -172,6 +173,113 @@
 .caroulsel-item-next,
 .carousel-item-active {
     opacity: 1; /* make sure images will change smoothly*/
+}
+
+/*swimming page styles*/
+.swimming-class img{
+    height: 300px;
+    width:100%;
+}
+.swimming-description h3{
+    padding-top: 30px;
+    text-align: center;
+}
+
+/*types of strokes*/
+.card-swimming {
+    margin-top: 50px;
+    justify-content: center; 
+    align-items: center;  
+    text-align: center;
+}
+
+.strokes{
+    padding-bottom: 50px;
+}
+
+.strcards {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    gap: 10px;
+    max-height: 700px;
+    margin: 10px auto;
+}
+
+.strcards:hover {
+    transform: scale(1.05);
+    color:#ff7014;
+}
+
+.stroke-img-top {
+    padding: 10px;
+    width: 250px;
+    display: block;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+/*age group division*/
+.class-division h3{
+    text-align: center;
+    padding-bottom: 50px;
+}
+  
+.types {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.summary {
+    text-align: left;
+    width: 75%; 
+    padding-left: 10px; 
+}
+.summary h5{
+    color:#ff7014;
+    margin-bottom: 10px;
+}
+
+.types-image {
+    width: 250px;
+    padding: 10px;
+    display: block;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 20px;
+}
+
+
+/*review section */
+.review {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 50px 20px;
+}
+
+.review h2 {
+    color: #ff7014;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blockquote {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    font-style: italic;
+    color: #e5e7eb;
+    text-align: center;
+}
+
+.blockquote-footer {
+    color: #ed9121 !important;
+    font-size: 0.9rem;
+    margin-top: 10px;
 }
 
 /*footer*/
