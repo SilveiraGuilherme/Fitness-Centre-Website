@@ -150,7 +150,6 @@ header {
     flex-direction: column;
     max-height: 700px;
     margin: 5px auto;
-    gap: 20px;
     border: 1px solid #ff7014;
     border-radius: 5px;
     padding: 10px;
