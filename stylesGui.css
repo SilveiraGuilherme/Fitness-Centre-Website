@@ -147,6 +147,8 @@ header {
     color: #ed9121;
     font-size: 0.9rem;
     margin-top: 10px;
+    display: flex;
+    justify-content: end;
 }
 
 /* Contact Us Section */
@@ -155,7 +157,8 @@ header {
 }
 
 .contact-link p {
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: bold;
     color: #212529;
     margin-bottom: 10px;
 }

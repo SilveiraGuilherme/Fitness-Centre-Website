@@ -95,10 +95,11 @@ header {
     width: 100%;
 }
 
-.categories, 
-.modalities, 
-.health-routine, .products {
-    width: 90%; 
+.categories,
+.modalities,
+.health-routine,
+.products {
+    width: 90%;
     padding: 0;
 }
 
@@ -217,7 +218,8 @@ header {
 .carousel-item-previous,
 .caroulsel-item-next,
 .carousel-item-active {
-    opacity: 1; /* make sure images will change smoothly*/
+    opacity: 1;
+    /* make sure images will change smoothly*/
 }
 
 /*swimming page styles*/
@@ -328,6 +330,8 @@ header {
     color: #ff7014 !important;
     font-size: 0.9rem;
     margin-top: 10px;
+    display: flex;
+    justify-content: end;
 }
 
 /*footer*/
