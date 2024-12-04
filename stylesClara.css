@@ -45,6 +45,10 @@ header {
     color: #ff7014;
 }
 
+.collapse {
+    margin-top: 30px;
+}
+
 /*index page styles*/
 /*intro content*/
 .introduction {
@@ -190,10 +194,6 @@ header {
     background-color: #ff7014 !important;
     border-color: #ff7014 !important;
     color: white;
-}
-
-.collapse {
-    margin-top: 30px;
 }
 
 /*products section*/

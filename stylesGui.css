@@ -1,4 +1,12 @@
 /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
 html,
 body {
     height: 100%;
@@ -8,7 +16,6 @@ body {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     background-image: url('images/crossfitBackground.png');
     background-size: cover;
     background-position: center;
@@ -20,12 +27,12 @@ main {
     flex: 1;
 }
 
-/* Navbar Styling */
 .logo {
     width: 100px;
     display: block;
 }
 
+/* Navbar */
 header {
     background-color: black;
 }
@@ -35,7 +42,7 @@ header {
 }
 
 .navbar .nav-item .nav-link {
-    color: #ff7014;
+    color: orange;
 }
 
 .navbar .dropdown-menu {
@@ -43,12 +50,11 @@ header {
 }
 
 .navbar .dropdown-menu .dropdown-item {
-    color: #ff7014;
+    color: orange;
 }
 
-/* Dropdown Toggle Arrow */
-.dropdown-toggle::after {
-    color: #ed9121;
+.collapse {
+    margin-top: 30px;
 }
 
 /* Welcome Section */
@@ -98,18 +104,18 @@ header {
 }
 
 /* Carousel */
-.carousel-item img {
+#crossfitCarousel .carousel-item img {
     height: 500px;
     object-fit: cover;
 }
 
-.carousel-caption h3 {
+#crossfitCarousel .carousel-caption h3 {
     color: orange;
     font-weight: bold;
     font-size: 1.75rem;
 }
 
-.carousel-caption p {
+#crossfitCarousel .carousel-caption p {
     color: white;
     font-size: 1rem;
     margin-top: 5px;
@@ -141,6 +147,33 @@ header {
     color: #ed9121;
     font-size: 0.9rem;
     margin-top: 10px;
+}
+
+/* Contact Us Section */
+.contact-link {
+    background-color: #f8f9fa51;
+}
+
+.contact-link p {
+    font-size: 18px;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.contact-link a {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-link a:hover {
+    background-color: rgb(255, 145, 0);
 }
 
 /* Footer */
