@@ -91,7 +91,9 @@ header {
     width: 100%;
 }
 
-.categories, .modalities, .health-routine, .products {
+.categories, 
+.modalities, 
+.health-routine, .products {
     width: 90%; 
     padding: 0;
 }
