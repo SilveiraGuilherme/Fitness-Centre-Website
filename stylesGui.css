@@ -61,28 +61,17 @@ header {
 .welcome-section {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    text-align: center;
 }
 
 .welcome-section h1 {
     font-size: 2.5rem;
     color: orange;
-}
-
-.welcome-section p {
-    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 /* Benefits Section */
-.benefits-section {
-    background-color: #f8f9fa;
-    padding: 50px 20px;
-}
-
 .benefits-section h2 {
     color: #333;
-    text-align: center;
-    margin-bottom: 30px;
 }
 
 .benefits-section h5 {
@@ -97,10 +86,17 @@ header {
 }
 
 .benefits-section img.benefit-icon {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
-    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.benefits-section img.benefit-icon:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
 }
 
 /* Carousel */
@@ -110,15 +106,17 @@ header {
 }
 
 #crossfitCarousel .carousel-caption h3 {
-    color: orange;
+    color: #ffd900;
     font-weight: bold;
     font-size: 1.75rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #crossfitCarousel .carousel-caption p {
     color: white;
     font-size: 1rem;
     margin-top: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Testimonials Section */
@@ -157,10 +155,9 @@ header {
 }
 
 .contact-link p {
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bold;
     color: #212529;
-    margin-bottom: 10px;
 }
 
 .contact-link a {
@@ -168,7 +165,7 @@ header {
     background-color: orange;
     color: white;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
