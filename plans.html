@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!--header and nav bar-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="index.html" aria-label="Home">
@@ -47,11 +48,11 @@
     </nav>
   </header>
   <main>
-    <!-- Plans Section -->
+    <!-- Updated Plans Section -->
     <section class="p-container container py-5">
       <div class="row">
         <!-- Text Section -->
-        <aside class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-start">
+        <aside class="text-section col-lg-6 col-sm-12">
           <h1>Need a plan?</h1>
           <p>
             If you don't know where to start, we are here to help. You can
@@ -64,7 +65,7 @@
           </div>
         </aside>
         <!-- Image Section -->
-        <div class="col-lg-6 col-sm-12">
+        <div class="image-section col-lg-6 col-sm-12">
           <img src="images/plans-img.jpg" alt="Woman walking on a treadmill in a fitness center." class="img-fluid" />
         </div>
       </div>
@@ -72,42 +73,54 @@
 
     <!-- Plans Section Cards -->
     <section id="plans" class="p-categories container py-5">
-      <h2 class="text-center">Plans</h2>
+      <h2 class="text-center">Our Membership Plans</h2>
       <div class="list-plans row">
-        <!-- Plan Card 1 -->
-        <div class="item-plan col-lg-4">
+        <!-- Silver Plan -->
+        <div class="item-plan col-lg-4 col-md-6 col-sm-12">
           <h3>Silver</h3>
+          <p>A basic plan for fitness enthusiasts starting their journey.</p>
           <ul>
-            <li>24h Gym</li>
-            <li>Functional Training</li>
+            <li>24/7 gym access.</li>
+            <li>Weekly functional training.</li>
           </ul>
+          <div class="price">
+            <h4>€29.99/month</h4>
+          </div>
           <div class="p-button">
             <a href="contact_us.html">Contact Us</a>
           </div>
         </div>
 
-        <!-- Plan Card 2 -->
-        <div class="item-plan col-lg-4">
-          <h3>Golden</h3>
+        <!-- Gold Plan -->
+        <div class="item-plan col-lg-4 col-md-6 col-sm-12">
+          <h3>Gold</h3>
+          <p>A flexible plan for those seeking more variety and options.</p>
           <ul>
-            <li>24h Gym</li>
-            <li>Functional Training</li>
-            <li>Swimming <strong>OR</strong> Crossfit</li>
+            <li>Everything in the Silver Plan.</li>
+            <li>Choose between swimming or CrossFit.</li>
+            <li>Personalized monthly workout plan.</li>
           </ul>
+          <div class="price">
+            <h4>€49.99/month</h4>
+          </div>
           <div class="p-button">
             <a href="contact_us.html">Contact Us</a>
           </div>
         </div>
 
-        <!-- Plan Card 3 -->
-        <div class="item-plan col-lg-4">
+        <!-- Platinum Plan -->
+        <div class="item-plan col-lg-4 col-md-6 col-sm-12">
           <h3>Platinum</h3>
+          <p>An all-in-one premium package for full access and priority benefits.</p>
           <ul>
-            <li>24h Gym</li>
-            <li>Functional Training</li>
-            <li>Swimming</li>
-            <li>Crossfit</li>
+            <li>Everything in the Gold Plan.</li>
+            <li>Swimming <strong>and</strong> CrossFit included.</li>
+            <li>Nutrition consultation.</li>
+            <li>Priority access to events and programs.</li>
           </ul>
+          <div class="price">
+            <h4>€69.99/month</h4>
+          </div>
           <div class="p-button">
             <a href="contact_us.html">Contact Us</a>
           </div>
@@ -125,7 +138,6 @@
       </blockquote>
     </section>
   </main>
-  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Go Training | All rights reserved</p>
     <div class="contact-info">
