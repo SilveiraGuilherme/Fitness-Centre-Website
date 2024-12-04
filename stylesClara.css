@@ -59,12 +59,11 @@ header {
     /* to put the text on top of the video */
     color: white;
     text-align: center;
-    padding: 5px;
     margin-bottom: 50px;
 }
 
-/* Video Style*/
-.intro video {
+/* Intro video style*/
+.introduction video {
     position: absolute;
     top: 0;
     left: 0;
@@ -76,11 +75,11 @@ header {
     /* video to be behind the welcoming text */
 }
 
-.intro h1,
-.intro h2,
-.intro p {
+.introduction h1,
+.introduction h2,
+.introduction p {
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 4px rgba(158, 153, 153, 0.6);
 }
 
 /*main content style*/
@@ -196,14 +195,12 @@ header {
 
 /*products section*/
 .products h3 {
-    background-color: #ff7014;
-    color: white;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.products img {
-    height: 450px;
+.carousel-inner {
+    height: 500px;
 }
 
 .carousel-inner img {
