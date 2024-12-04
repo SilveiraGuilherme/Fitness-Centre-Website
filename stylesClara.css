@@ -327,7 +327,7 @@ header {
     margin-top: 10px;
 }
 
-/*footer*/
+/* ____________________ Footer ____________________ */
 footer {
     background-color: black;
     color: #e5e7eb;
@@ -351,7 +351,9 @@ footer p {
     height: 24px;
 }
 
-/* __________ Plans Page __________ *
+/*_____________________________________________________*/
+
+/* ____________________ Plans Page ____________________ */
 
 /* Intro - Plans Section */
 .p-container aside {
@@ -383,12 +385,8 @@ footer p {
 }
 
 .p-container img {
-    max-width: 100%;
-    height: auto;
     border-radius: 10px;
-    /* Rounded corners for the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Add subtle shadow for depth */
 }
 
 /* Plans Section Cards */
@@ -526,3 +524,5 @@ footer p {
         margin: 0 auto 20px;
     }
 }
+
+/*___________________________________________________*/
