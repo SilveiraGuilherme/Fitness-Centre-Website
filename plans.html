@@ -11,40 +11,42 @@
 </head>
 
 <body>
-  <!--header and nav bar-->
+  <!-- Nav Bar-->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="index.html" aria-label="Home">
-        <img src="images/logos/go-training.jpg" alt="Go Training Logo" class="logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html" aria-label="HomePage">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="modalitiesDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false" aria-label="Modalities">
-              Modalities
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="modalitiesDropdown">
-              <li><a class="dropdown-item" href="crossfit.html">CrossFit</a></li>
-              <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
-              <li><a class="dropdown-item" href="gym.html">Open Gym</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="plans.html" aria-current="page" aria-label="Plans">Plans</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact_us.html" aria-label="ContactUs">Contact Us</a>
-          </li>
-        </ul>
-      </div>
+    <nav>
+      <menu class="navbar navbar-expand-lg navbar-dark">
+        <li><a class="navbar-brand" href="index.html" aria-label="HomePage">
+            <img src="images/logos/go-training.jpg" alt="Go Training Logo" class="logo">
+          </a></li>
+        <li><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button></li>
+        <li class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-label="HomePage">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="modalitiesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Modalities">
+                Modalities
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="modalitiesDropdown">
+                <li><a class="dropdown-item" href="crossfit.html">CrossFit</a></li>
+                <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+                <li><a class="dropdown-item" href="gym.html">Open Gym</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="plans.html" aria-current="page" aria-label="Plans">Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html" aria-label="ContactUs">Contact Us</a>
+            </li>
+          </ul>
+        </li>
+      </menu>
     </nav>
   </header>
   <main>
@@ -72,7 +74,7 @@
     </section>
 
     <!-- Plans Section Cards -->
-    <section id="plans" class="p-categories container py-5">
+    <section id="plans" class="container py-5">
       <h2 class="text-center">Our Membership Plans</h2>
       <div class="list-plans row">
         <!-- Silver Plan -->
@@ -83,7 +85,7 @@
             <li>24/7 gym access.</li>
             <li>Weekly functional training.</li>
           </ul>
-          <div class="price">
+          <div>
             <h4>€29.99/month</h4>
           </div>
           <div class="p-button">
@@ -100,7 +102,7 @@
             <li>Choose between swimming or CrossFit.</li>
             <li>Personalized monthly workout plan.</li>
           </ul>
-          <div class="price">
+          <div>
             <h4>€49.99/month</h4>
           </div>
           <div class="p-button">
@@ -118,7 +120,7 @@
             <li>Nutrition consultation.</li>
             <li>Priority access to events and programs.</li>
           </ul>
-          <div class="price">
+          <div>
             <h4>€69.99/month</h4>
           </div>
           <div class="p-button">
