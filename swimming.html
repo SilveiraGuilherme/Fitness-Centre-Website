@@ -1,195 +1,231 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 	<head>
 		<title>Swimming</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="stylesClara.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="stylesClara.css">
 	</head>
+
 	<body>
 		<!--header and nav bar-->
-		<header style="background-color: black;">
-			<nav class="navbar navbar-expand-lg navbar-dark" >
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark">
 				<a class="navbar-brand" href="index.html" aria-label="Home">
-					<img src="images/logos/go-training.jpeg" alt="logo" class="logo">
+					<img src="images/logos/go-training.jpg" alt="Go Training Logo" class="logo">
 				</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html"" aria-label="HomePage">Home</a>
+							<a class="nav-link" href="index.html" aria-label="HomePage">Home</a>
 						</li>
 						<li class="nav-item dropdown">
-		    				<a class="nav-link dropdown-toggle" href="#" id="modalitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Modalities">
-			    			Modalities
+							<a class="nav-link dropdown-toggle" href="#" id="modalitiesDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false" aria-label="Modalities">
+								Modalities
 							</a>
-                <ul class="dropdown-menu" aria-labelledby="modalitiesDropdown">
-                  <li><a class="dropdown-item" href="#">CrossFit</a></li>
-                  <li><a class="dropdown-item" href="#">Swimming</a></li>
-                  <li><a class="dropdown-item" href="#">Open Gym</a></li>
-                </ul>
+							<ul class="dropdown-menu" aria-labelledby="modalitiesDropdown">
+								<li><a class="dropdown-item" href="crossfit.html">CrossFit</a></li>
+								<li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+								<li><a class="dropdown-item" href="gym.html">Open Gym</a></li>
+							</ul>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="plans.html" aria-label="Plans">Plans</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html" aria-label="ContactUs">Contact Us</a>
+							<a class="nav-link" href="contact_us.html" aria-label="ContactUs">Contact Us</a>
 						</li>
 					</ul>
 				</div>
 			</nav>
 		</header>
-        <div>
+		<div>
 			<!--main content-->
-            <div class="swimming-class">
-              <img src="images/swimming-class.jpg" alt="pool">
-            </div>
-            <div class="container">
-				<!-- why choose swimming?-->
-            	<div class="swimming-description p-3">
-                  	<h3>Why choose swimming?</h3>
-						<p>Swimming is a complete sport for both body and mind. Practicing this sport offers several benefits and, 
-						as it is a low-impact sport, it is recommended for everyone who wants to practice physical activity.</p>
-						<p>When swimming, we exercise our body's muscles all at the same time, which helps with strengthening, 
-						improves respiratory condition and helps burn calories. Another positive point of this physical activity is that
-						it can be practiced from a baby to older ages.</p>
-                    	<p>If you haven't tried this pleasurable sport yet, perhaps now is the ideal time to go all out in this aquatic world.</p>
-                </div>         
-           	 	<!--types of strokes-->
-				<div class="card-swimming p-5">
-					<h3 class="strokes">Types of Strokes</h3>
-					<div class="strokes-cards row g-3">
-						<div class="col-md-3">
-							<div class="strcards">
-						  		<img src="images/freestyle.jpg" class="stroke-img-top" alt="someone swimming freeestyle">
-						 		<div class="stroke-body">
-									<h5 class="card-title">Freestyle</h5>
-							  		<p class="card-text">Fast and efficient type of stroke, performed by alternating arms and breathing laterally.
-									predominant swimming style among practitioners.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-3">
-							<div class="strcards">
-						  		<img src="images/backstroke.jpg" class="stroke-img-top" alt="girl drinking water">
-						 		<div class="stroke-body">
-									<h5 class="card-title">Backstroke</h5>
-							  		<p class="card-text">Swimming is performed on the back also with alternating movement of the arms, 
-									but with circular movements. Breathing is more easily controlled, as the face is above the water level.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-3">
-							<div class="strcards">
-						  		<img src="images/breaststroke.jpg" class="stroke-img-top" alt="girl drinking water">
-						 		<div class="stroke-body">
-									<h5 class="card-title">Breaststroke</h5>
-							  		<p class="card-text">Swimming is performed with concomitant movement of the arms, performing a circle or "half moon" while the legs perform a "frog kick" movement.
-									Breathing can be better controlled as the head is often above water level.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-3">
-							<div class="strcards">
-						  		<img src="images/butterlfy.jpg" class="stroke-img-top" alt="girl drinking water">
-						 		<div class="stroke-body">
-									<h5 class="card-title">Butterfly</h5>
-							  		<p class="card-text">Swimming is performed with concomitant movement of the arms forward and backward,
-									while the legs perform a "dolphin kick" movement. It requires a lot of coordination and endurance to perform.</p>
-								</div>
-							</div>
-						</div>
+		<main>
+			<!--why choose swimming?-->
+			<section class="reason-swimming">
+				<div class="swimming-class">
+					<img src="images/swimming-class.jpg" alt="pool">
+				</div>
+				<div class="container">
+					<!-- why choose swimming?-->
+					<div class="swimming-description p-3">
+						<h3>Why choose swimming?</h3>
+						<p>Swimming is a complete sport for both body and mind. Practicing this sport offers several benefits
+							and,
+							as it is a low-impact sport, it is recommended for everyone who wants to practice physical activity.
+						</p>
+						<p>When swimming, we exercise our body's muscles all at the same time, which helps with strengthening,
+							improves respiratory condition and helps burn calories. Another positive point of this physical
+							activity is that
+							it can be practiced from a baby to older ages.</p>
+						<p>If you haven't tried this pleasurable sport yet, perhaps now is the ideal time to go all out in this
+							aquatic world.</p>
 					</div>
 				</div>
-				<!--class divisions-->
-				<div class="class-division p-5">
-					<h3>Age Group Division</h3>
-					<div class="types">
-						<img src="images/baby-swimming.jpg" alt="baby swimming" class="types-image">
-						<div class="summary">
-							<h5>Baby Swimming</h5>
-        						<p><strong>6 months to 3 years:</strong> Generally accompanied by a responsible adult, in this age group,
-								they learn the basics of floating and develop some skills such as confidence.</p>
-         				</div>
+			</section>
+
+			<!--types of strokes-->
+			<section class="strokes-modalities">
+				<div class="container">
+					<div class="card-swimming p-5">
+						<h3 class="strokes">Types of Strokes</h3>
+						<div class="strokes-cards row g-3">
+							<div class="col-md-3">
+								<div class="strcards">
+									<img src="images/freestyle.jpg" class="stroke-img-top" alt="someone swimming freeestyle">
+									<div class="stroke-body">
+										<h5 class="card-title">Freestyle</h5>
+										<p class="card-text">Fast and efficient type of stroke, performed by alternating arms
+											and breathing laterally.
+											predominant swimming style among practitioners.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3">
+								<div class="strcards">
+									<img src="images/backstroke.jpg" class="stroke-img-top" alt="girl drinking water">
+									<div class="stroke-body">
+										<h5 class="card-title">Backstroke</h5>
+										<p class="card-text">Swimming is performed on the back also with alternating movement of
+											the arms,
+											but with circular movements. Breathing is more easily controlled, as the face is
+											above the water level.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3">
+								<div class="strcards">
+									<img src="images/breaststroke.jpg" class="stroke-img-top" alt="girl drinking water">
+									<div class="stroke-body">
+										<h5 class="card-title">Breaststroke</h5>
+										<p class="card-text">Swimming is performed with concomitant movement of the arms,
+											performing a circle or "half moon" while the legs perform a "frog kick" movement.
+											Breathing can be better controlled as the head is often above water level.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3">
+								<div class="strcards">
+									<img src="images/butterlfy.jpg" class="stroke-img-top" alt="girl drinking water">
+									<div class="stroke-body">
+										<h5 class="card-title">Butterfly</h5>
+										<p class="card-text">Swimming is performed with concomitant movement of the arms forward
+											and backward,
+											while the legs perform a "dolphin kick" movement. It requires a lot of coordination
+											and endurance to perform.</p>
+									</div>
+								</div>
+							</div>
+						</div>	
 					</div>
-					<div class="types">
-						<img src="images/children.jpg" alt="kid swimming" class="types-image">
-     					<div class="summary">
-							<h5>Small Children</h5>
-							<p><strong>3 to 5 years:</strong>In this age group, the ability to float and also the correct movement of arms and legs 
-							begin to improve. They also enhance their motor coordination, body awareness, etc.</p>
-     					</div>
-					</div>
-					<div class="types">
-						 <img src="images/teen.jpg" alt="teenager swimming" class="types-image">
-     					<div class="summary">
-							<h5>Children</h5>
-							<p><strong>6 to 13 years:</strong> In this age group, they learn the types of strokes.
-							Classes generally focused at perfecting each swim and improving physical conditioning.</p>
+				</div>
+			</section>
+
+			<!--class divisions-->
+			<section class="group-division">
+				<div class="container">	
+					<div class="class-division p-5">
+						<h3>Age Group Division</h3>
+						<div class="types">
+							<img src="images/baby-swimming.jpg" alt="baby swimming" class="types-image">
+							<div class="summary">
+								<h5>Baby Swimming</h5>
+								<p><strong>6 months to 3 years:</strong> Generally accompanied by a responsible adult, in this
+									age group,
+									they learn the basics of floating and develop some skills such as confidence.</p>
+							</div>
 						</div>
+						<div class="types">
+							<img src="images/children.jpg" alt="kid swimming" class="types-image">
+							<div class="summary">
+								<h5>Small Children</h5>
+								<p><strong>3 to 5 years:</strong>In this age group, the ability to float and also the correct
+									movement of arms and legs
+									begin to improve. They also enhance their motor coordination, body awareness, etc.</p>
+							</div>
+						</div>
+						<div class="types">
+							<img src="images/teen.jpg" alt="teenager swimming" class="types-image">
+							<div class="summary">
+								<h5>Children</h5>
+								<p><strong>6 to 13 years:</strong> In this age group, they learn the types of strokes.
+									Classes generally focused at perfecting each swim and improving physical conditioning.</p>
+							</div>
+						</div>
+						<div class="types">
+							<img src="images/swimmer.jpg" alt="adult swimming" class="types-image">
+							<div class="summary">
+								<h5>Adults</h5>
+								<p><strong>14 or more:</strong> In this age group, classes are focused on gradual learning
+									and the practice of swimming as a sport that, in addition to physical health, benefits
+									social
+									and mental health. It may also include training for competitions.</p>
+							</div>
+						</div>
+						<div class="types">
+							<img src="images/elderly.jpg" alt="elderly swimming class" class="types-image">
+							<div class="summary">
+								<h5>Elderly Adults</h5>
+								<p><strong>50 or more:</strong> In this age group, Classes more focused on low-impact exercises
+									for the cardiovascular system and also for the muscles, with a more therapeutic purpose.</p>
+							</div>
+						</div>
+						<p style="color:lightgrey"><strong>*</strong> This division may vary according to the abilities and
+							needs of each student.</p>
 					</div>
-					<div class="types">
-						<img src="images/swimmer.jpg" alt="adult swimming" class="types-image">
-						<div class="summary">
-						   <h5>Adults</h5>
-						   <p><strong>14 or more:</strong> In this age group, classes are focused on gradual learning 
-							and the practice of swimming as a sport that, in addition to physical health, benefits social 
-							and mental health. It may also include training for competitions.</p>
-					   </div>
-				   </div>
-				   <div class="types">
-						<img src="images/elderly.jpg" alt="elderly swimming class" class="types-image">
-						<div class="summary">
-							<h5>Elderly Adults</h5>
-								<p><strong>50 or more:</strong> In this age group, Classes more focused on low-impact exercises 
-								for the cardiovascular system and also for the muscles, with a more therapeutic purpose.</p>
-				   		</div>
-			   		</div>
-					   <p style="color:lightgrey"><strong>*</strong> This division may vary according to the abilities and needs of each student.</p>
-				</div>	
-			</div>	
-		<!--review section -->
-		<section class="review py-5">
-			<div class="container">
-				<h2 class="text-center mb-4">What Our Members Say</h2>
-			  	<div class="row">
-					<div class="col-md-6 mb-4">
-						<blockquote class="blockquote text-center">
-							<p>"The training center is incredible. The swimming classes are really designed for all ages and needs.</br>
-							Great care for children and adults, specially those who have some type of difficulty.</br>
-							I HIGHLY RECOMMEND IT!!!!"</p>
-							<footer class="blockquote-footer">Maeve Carroll</footer>
-				  		</blockquote>
-					</div>
-					<div class="col-md-6 mb-4">
-				  		<blockquote class="blockquote text-center">
-							<p>"After starting swimming lessons, my son had a great improvement in his breathing capacity, no longer snoring when he sleeps.</br>
-							Certainly, swimming was the best choice and the coaches are to be congratulated.</p>
-							<footer class="blockquote-footer">Niamh Ryan</footer>
-				  		</blockquote>
-					</div>
-			  	</div>
-			</div>
-		</section>
-	  
-      <footer>
-			  <p>&copy; 2024 Go Training | All rights reserved</p>
-			    <div class="contact-info">
-			      <a href="https://www.instagram.com/" target="_blank">
-				      <img src="images/logos/instagram-logo.png" alt="Instagram logo" />
-			      </a>
-			      <a href="https://web.whatsapp.com/" target="_blank">
-				      <img src="images/logos/whats-app-logo.png" alt="WhatsApp logo" />
-			      </a>
-			      <a href="https://www.google.com/maps" target="_blank">
-				      <img src="images/logos/pin-location.png" alt="Pin location figure" />
-			      </a>
-			    </div>
-		  </footer>		
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	</body>	
+				</div>
+			</section>
+
+			<!--review section -->
+			<section class="review py-5">
+				<div class="container">
+					<h2 class="text-center mb-4">What Our Members Say</h2>
+					<div class="row">
+						<div class="col-md-6 mb-4">
+							<blockquote class="blockquote text-center">
+								<p>"The training center is incredible. The swimming classes are really designed for all ages
+								and needs. Great care for children and adults, specially those who have some type of
+								difficulty.</br>
+								I HIGHLY RECOMMEND IT!!!!"</p>
+								<p class="blockquote-footer">Maeve Carroll</p>
+							</blockquote>
+						</div>
+						<div class="col-md-6 mb-4">
+							<blockquote class="blockquote text-center">
+								<p>"After starting swimming lessons, my son had a great improvement in his breathing
+									capacity, no longer snoring when he sleeps.</br>
+									Certainly, swimming was the best choice and the coaches are to be congratulated.</p>
+								<p class="blockquote-footer">Niamh Ryan</p>
+							</blockquote>
+						</div>
+					</div>	
+				</div>
+			</section>
+
+			<footer>
+				<p>&copy; 2024 Go Training | All rights reserved</p>
+				<div class="contact-info">
+					<a href="https://www.instagram.com/" target="_blank">
+						<img src="images/logos/instagram-logo.png" alt="Instagram logo" />
+					</a>
+					<a href="https://web.whatsapp.com/" target="_blank">
+						<img src="images/logos/whats-app-logo.png" alt="WhatsApp logo" />
+					</a>
+					<a href="https://www.google.com/maps" target="_blank">
+						<img src="images/logos/pin-location.png" alt="Pin location figure" />
+					</a>
+				</div>
+			</footer>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+
 </html>
