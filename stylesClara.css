@@ -170,7 +170,7 @@ footer p {
 }
 
 /*specifications for small screens*/
-@media (max-width: 751px) {
+@media (max-width: 768px) {
     .categories {
         text-align: center;
         align-items: center;
