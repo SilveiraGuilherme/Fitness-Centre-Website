@@ -2,25 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CrossFit</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- External CSS -->
-  <link rel="stylesheet" href="external.css">
-  <!-- Guilherme CCS-->
-  <!-- <link rel="stylesheet" href="stylesGui.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Dynamic Styles -->
+  <link id="dynamicStyle" rel="stylesheet" href="external.css">
 </head>
 
 <body>
   <header>
-    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="index.html" aria-label="HomePage">
+      <a class="navbar-brand" href="index.html" aria-label="Home">
         <img src="images/logos/go-training.jpg" alt="Go Training Logo" class="logo">
       </a>
+      <button id="toggleStyles" class="btn btn-outline-light ms-3 floating-button">Switch Styles</button>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -169,6 +167,17 @@
       </a>
     </div>
   </footer>
+
+  <!-- Switch Styles Button -->
+  <script>
+    document.getElementById('toggleStyles').addEventListener('click', function () {
+      const currentStylesheet = document.getElementById('dynamicStyle');
+      const newStylesheet =
+        currentStylesheet.getAttribute('href') === 'stylesGui.css' ? 'external.css' : 'stylesGui.css';
+      currentStylesheet.setAttribute('href', newStylesheet);
+    });
+  </script>
+
   <!--bootstrap js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

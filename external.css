@@ -108,13 +108,6 @@ footer p {
 
 /*main content*/
 /*modalities*/
-.container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
 
 .categories {
     width: 90%;
@@ -289,7 +282,7 @@ footer p {
 }
 
 .collapse {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 /*products section*/
@@ -304,6 +297,36 @@ footer p {
 }
 
 /* ____________________ Modalities Pages ____________________ */
+/* Floating Button */
+.floating-button {
+    position: fixed;
+    /* Keeps the button in a fixed position on the screen */
+    top: 20px;
+    /* Distance from the top of the viewport */
+    right: 20px;
+    /* Distance from the right of the viewport */
+    z-index: 1000;
+    /* Ensures it stays on top of other elements */
+    padding: 10px 15px;
+    background-color: #ff7014;
+    /* Highlight color to make it visible */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for better visibility */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Add a hover effect */
+}
+
+.floating-button:hover {
+    background-color: #e85d0a;
+    /* Darker shade on hover */
+    transform: scale(1.1);
+    /* Slight zoom effect */
+}
+
 /* Testimonials Section */
 .testimonials-section h2 {
     font-size: 36px;
@@ -431,7 +454,7 @@ footer p {
     text-align: center;
 }
 
-.swimming-description p{
+.swimming-description p {
     padding-top: 10px;
     text-align: center;
 }
