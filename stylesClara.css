@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +20,7 @@ main {
     flex: 1;
 }
 
-/*header*/
+/* ________________________ Header ________________________ */
 .logo {
     width: 100px;
     display: block;
@@ -45,7 +46,31 @@ header {
     color: #ff7014;
 }
 
-/*index page styles*/
+/* ________________________ Footer ________________________ */
+footer {
+    background-color: black;
+    color: #e5e7eb;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-info img {
+    width: 24px;
+    height: 24px;
+}
+
+/* ______________________ Index Page ______________________ */
 /*intro content*/
 .introduction {
     display: flex;
@@ -55,7 +80,7 @@ header {
     text-align: center;
     background-color: black;
     position: relative;
-     /* to put the text on top of the video */
+    /* to put the text on top of the video */
     z-index: 1;
     margin-bottom: 50px;
 }
@@ -147,8 +172,73 @@ header {
 
 /*tips section*/
 
+/*main content*/
+/*modalities*/
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
-/*swimming page styles*/
+.categories {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.categories h5 {
+    color: #ff7014;
+}
+
+.categories.reverse {
+    flex-direction: row-reverse;
+    padding-bottom: 50px;
+}
+
+.categories.reverse h5 {
+    color: #ff7014;
+}
+
+.categories-img{
+    width: 250px;
+    padding: 10px;
+    display: block;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.text{
+    flex= 1;
+}
+
+/*specifications for small screens*/
+@media (max-width: 751px) {
+    .categories {
+        flex-direction: column; /
+        align-items: center;
+        text-align: center;
+    }
+
+    .categories.reverse {
+        flex-direction: column; 
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .categories-img {
+        margin-bottom: 15px;
+    }
+}
+
+/*tips section*/
+
+/* ____________________ Swimming Page ____________________ */
 /*description */
 .swimming-class img {
     height: 300px;
@@ -258,33 +348,7 @@ header {
     margin-top: 10px;
 }
 
-/* ____________________ Footer ____________________ */
-footer {
-    background-color: black;
-    color: #e5e7eb;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-.contact-info {
-    display: flex;
-    gap: 15px;
-}
-
-.contact-info img {
-    width: 24px;
-    height: 24px;
-}
-
-/*_____________________________________________________*/
-
-/* ____________________ Plans Page ____________________ */
+/* ______________________ Plans Page ______________________ */
 
 /* Intro - Plans Section */
 .p-container aside {
@@ -295,7 +359,6 @@ footer p {
     align-items: flex-start;
     gap: 10px;
     margin-bottom: 20px;
-    /* Add spacing below text section for small screens */
 }
 
 .p-container h1 {
@@ -321,6 +384,14 @@ footer p {
 }
 
 /* Plans Section Cards */
+#plans {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 #plans h2 {
     font-size: 36px;
     font-weight: 800;
@@ -455,5 +526,3 @@ footer p {
         margin: 0 auto 20px;
     }
 }
-
-/*___________________________________________________*/
