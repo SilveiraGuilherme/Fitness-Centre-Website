@@ -422,7 +422,7 @@ footer p {
 /* ____________________ Swimming Page ____________________ */
 /*description */
 .swimming-class img {
-    height: 300px;
+    height: 320px;
     width: 100%;
 }
 
@@ -431,16 +431,21 @@ footer p {
     text-align: center;
 }
 
+.swimming-description p{
+    padding-top: 10px;
+    text-align: center;
+}
+
 /*types of strokes*/
 .card-swimming {
-    margin-top: 50px;
+    margin-top: 15px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .strokes {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .strcards {
