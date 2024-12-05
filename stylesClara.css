@@ -54,7 +54,7 @@ header {
     text-align: center;
     background-color: black;
     position: relative;
-     /* to put the text on top of the video */
+    /* to put the text on top of the video */
     z-index: 1;
     margin-bottom: 50px;
 }
@@ -254,6 +254,14 @@ footer p {
 }
 
 /* Plans Section Cards */
+#plans {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 #plans h2 {
     font-size: 36px;
     font-weight: 800;
