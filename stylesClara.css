@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@ main {
     flex: 1;
 }
 
-/*header*/
+/* ________________________ Header ________________________ */
 .logo {
     width: 100px;
     display: block;
@@ -44,7 +45,31 @@ header {
     color: #ff7014;
 }
 
-/*index page styles*/
+/* ________________________ Footer ________________________ */
+footer {
+    background-color: black;
+    color: #e5e7eb;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-info img {
+    width: 24px;
+    height: 24px;
+}
+
+/* ______________________ Index Page ______________________ */
 /*intro content*/
 .introduction {
     display: flex;
@@ -80,8 +105,7 @@ header {
     text-shadow: 2px 2px 4px rgba(158, 153, 153, 0.6);
 }
 
-
-/*swimming page styles*/
+/* ____________________ Swimming Page ____________________ */
 /*description */
 .swimming-class img {
     height: 300px;
@@ -191,33 +215,7 @@ header {
     margin-top: 10px;
 }
 
-/* ____________________ Footer ____________________ */
-footer {
-    background-color: black;
-    color: #e5e7eb;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-.contact-info {
-    display: flex;
-    gap: 15px;
-}
-
-.contact-info img {
-    width: 24px;
-    height: 24px;
-}
-
-/*_____________________________________________________*/
-
-/* ____________________ Plans Page ____________________ */
+/* ______________________ Plans Page ______________________ */
 
 /* Intro - Plans Section */
 .p-container aside {
@@ -228,7 +226,6 @@ footer p {
     align-items: flex-start;
     gap: 10px;
     margin-bottom: 20px;
-    /* Add spacing below text section for small screens */
 }
 
 .p-container h1 {
@@ -396,5 +393,3 @@ footer p {
         margin: 0 auto 20px;
     }
 }
-
-/*___________________________________________________*/
