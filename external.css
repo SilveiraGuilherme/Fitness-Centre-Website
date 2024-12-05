@@ -370,23 +370,24 @@ footer p {
     margin-bottom: 30px;
 }
 
-/* Carousel Styles */
-#crossfitCarousel img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Carousel */
+#crossfitCarousel .carousel-item img {
+    height: 500px;
+    object-fit: cover;
 }
 
-.carousel-caption h3 {
-    font-size: 24px;
-    font-weight: bold;
+#crossfitCarousel .carousel-caption h3 {
     color: #ff7014;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-caption p {
-    font-size: 16px;
+#crossfitCarousel .carousel-caption p {
     color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    margin-top: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Benefits Section */
@@ -513,7 +514,6 @@ footer p {
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 20px;
 }
 
 .p-container h1 {
@@ -651,6 +651,11 @@ footer p {
     font-size: 16px;
 }
 
+.quote h2 {
+    color: #1f2937;
+    font-weight: bold;
+}
+
 .quote blockquote {
     font-size: 20px;
     font-weight: bold;
@@ -711,7 +716,17 @@ footer p {
 
 /* ______________________ Responsive Adjustments ______________________ */
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
+
+    /* Plans Page */
+    .p-container aside {
+        margin-bottom: 20px;
+    }
+
+    .p-container .p-button {
+        margin: 10px auto 0;
+    }
+
     .item-plan {
         margin: 0 auto 20px;
     }
@@ -748,14 +763,5 @@ footer p {
         flex: 1 1 100%;
         /*card occupy the whole container*/
         margin: 5px 0;
-    }
-
-    /* Plans Page */
-    .text-section .p-button {
-        margin: 10px auto 0;
-    }
-
-    .item-plan {
-        margin: 0 auto 20px;
     }
 }
