@@ -131,12 +131,10 @@ footer p {
 .categories.reverse {
     flex-direction: row-reverse;
     padding-bottom: 50px;
-    text-align: right;
 }
 
 .categories.reverse h5 {
     color: #ff7014;
-    text-align: right;
 }
 
 .categories-img {
@@ -146,10 +144,6 @@ footer p {
     object-fit: cover;
     height: 150px;
     border-radius: 20px;
-}
-
-.categories:hover {
-    transform: scale(1.05);
 }
 
 .interested {

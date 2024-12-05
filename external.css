@@ -1,36 +1,52 @@
-body{
-
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
 }
 
-/*review section */
-.review {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    padding: 50px 20px;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
 }
 
-.review h2 {
+main {
+    flex: 1;
+}
+
+/* ________________________ Header ________________________ */
+.logo {
+    width: 100px;
+    display: block;
+}
+
+header {
+    background-color: black;
+}
+
+.navbar {
+    padding: 16px 32px;
+}
+
+.navbar .nav-item .nav-link {
     color: #ff7014;
-    text-align: center;
-    margin-bottom: 30px;
 }
 
-.blockquote {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 5px;
-    font-style: italic;
-    color: #e5e7eb;
-    text-align: center;
+.navbar .dropdown-menu {
+    background-color: black;
 }
 
-.blockquote-footer {
-    color: #ff7014 !important;
-    font-size: 0.9rem;
-    margin-top: 10px;
+.navbar .dropdown-menu .dropdown-item {
+    color: #ff7014;
 }
 
-/*footer*/
+/* ________________________ Footer ________________________ */
 footer {
     background-color: black;
     color: #e5e7eb;
@@ -52,4 +68,628 @@ footer p {
 .contact-info img {
     width: 24px;
     height: 24px;
+}
+
+/* ______________________ Index Page ______________________ */
+/*intro content*/
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    /* to put the text on top of the video */
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+/* Intro video style*/
+.introduction video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* video to cover the div area */
+    object-fit: cover;
+    /* video to be behind the welcoming text */
+    z-index: -1;
+
+}
+
+.introduction h1,
+.introduction h2,
+.introduction p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(158, 153, 153, 0.6);
+}
+
+/*main content*/
+/*modalities*/
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.categories {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.categories h5 {
+    color: #ff7014;
+}
+
+.categories.reverse {
+    flex-direction: row-reverse;
+    padding-bottom: 50px;
+}
+
+.categories.reverse h5 {
+    color: #ff7014;
+}
+
+.categories-img {
+    width: 250px;
+    padding: 10px;
+    display: block;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.interested {
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.anchor-plans {
+    text-decoration: none;
+    color: white;
+    background-color: #ff7014;
+    border: 2px solid #ff7014;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.anchor-plans:hover {
+    background-color: white;
+    color: #ff7014;
+}
+
+/*specifications for small screens*/
+@media (max-width: 751px) {
+    .categories {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .categories.reverse {
+        flex-direction: column;
+    }
+
+    .categories-img {
+        margin-bottom: 10px;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+/*tips section*/
+
+.health-routine {
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.health-routine h3 {
+    padding-bottom: 5px;
+}
+
+.tips {
+    padding-bottom: 50px;
+}
+
+.tip-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.health-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 30%;
+    margin: 5px 0;
+    border: 1px solid #ff7014;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.health-card:hover {
+    transform: scale(1.05);
+    background-color: #ff7014;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.health-body {
+    flex-grow: 1;
+    /*content takes up remaining space*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card-text,
+.card-title {
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+.btn-light {
+    border-color: transparent;
+    color: #000;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #ff7014;
+    border-color: #ff7014;
+    color: white;
+}
+
+.collapse {
+    margin-top: 10px;
+}
+
+/*products section*/
+
+.products-content {
+    padding-bottom: 100px;
+}
+
+.products h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* ____________________ Modalities Pages ____________________ */
+/* Testimonials Section */
+.testimonials-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 30px;
+}
+
+.testimonials-section blockquote {
+    font-size: 18px;
+    color: #333;
+    font-style: italic;
+    border-left: 5px solid #ff7014;
+    padding-left: 20px;
+}
+
+.testimonials-section .blockquote-footer {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Contact Us Section */
+.contact-link {
+    background-color: #ff7014;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.contact-link a {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #ff7014;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-link a:hover {
+    background-color: white;
+    color: #ff7014;
+    border: 2px solid #ff7014;
+}
+
+
+/* ____________________ Swimming Page ____________________ */
+/*description */
+.swimming-class img {
+    height: 300px;
+    width: 100%;
+}
+
+.swimming-description h3 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+/*types of strokes*/
+.card-swimming {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.strokes {
+    padding-bottom: 50px;
+}
+
+.strcards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 700px;
+    margin: 10px auto;
+}
+
+.strcards:hover {
+    transform: scale(1.05);
+    color: #ff7014;
+}
+
+.stroke-img-top {
+    padding: 10px;
+    width: 250px;
+    display: block;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+/*age group division*/
+.class-division h3 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.summary {
+    text-align: left;
+    width: 75%;
+    padding-left: 10px;
+}
+
+.summary h5 {
+    color: #ff7014;
+    margin-bottom: 10px;
+}
+
+.types-image {
+    width: 250px;
+    padding: 10px;
+    display: block;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 20px;
+}
+
+/* ______________________ Plans Page ______________________ */
+
+/* Intro - Plans Section */
+.p-container aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.p-container h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ff7014;
+}
+
+.p-container p {
+    font-size: 18px;
+    color: #212529;
+    font-weight: normal;
+}
+
+.p-container em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.p-container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Plans Section Cards */
+#plans {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#plans h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 28px;
+}
+
+.list-plans {
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.item-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 300px;
+    border: 2px solid #ff7014;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9fafb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.item-plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item-plan h3 {
+    color: #ff7014;
+    margin: 15px 0;
+    position: relative;
+}
+
+.item-plan h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #ff7014;
+    margin: 10px auto;
+}
+
+.item-plan ul {
+    flex-grow: 1;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.item-plan ul li {
+    font-size: 14px;
+    color: #1f2937;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.item-plan ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff7014;
+    border-radius: 50%;
+}
+
+.p-button {
+    margin-top: 10px;
+}
+
+.p-button a {
+    display: inline-block;
+    background-color: #ff7014;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.p-button a:hover {
+    background-color: #e85d0a;
+}
+
+/* Quote Section */
+.quote {
+    background-color: #ff7014;
+    color: white;
+    text-align: center;
+    padding: 30px 10%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.quote blockquote {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.quote cite {
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    display: block;
+}
+
+/* ______________________ Crossfit Page ______________________ */
+
+/* Welcome Section */
+.welcome-section h1 {
+    font-size: 48px;
+    color: #ff7014;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    color: #212529;
+    margin-bottom: 30px;
+}
+
+/* Carousel Styles */
+#crossfitCarousel img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-caption h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff7014;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    font-size: 16px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Benefits Section */
+.benefits-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 30px;
+}
+
+.benefits-section h5 {
+    font-size: 20px;
+    color: #ff7014;
+    margin-top: 15px;
+}
+
+.benefits-section p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.benefits-section img.benefit-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ______________________ Responsive Adjustments ______________________ */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .item-plan {
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Index Page */
+    .categories {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .categories.reverse {
+        flex-direction: column;
+    }
+
+    .categories-img {
+        margin-bottom: 10px;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .tip-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .health-card {
+        flex: 1 1 100%;
+        /*card occupy the whole container*/
+        margin: 5px 0;
+    }
+
+    /* Plans Page */
+    .text-section .p-button {
+        margin: 10px auto 0;
+    }
+
+    .item-plan {
+        margin: 0 auto 20px;
+    }
 }
