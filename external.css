@@ -136,6 +136,7 @@ footer p {
 .categories.reverse h5 {
     color: #ff7014;
 }
+
 .categories.reverse {
     flex-direction: row-reverse;
     padding-bottom: 50px;
@@ -160,7 +161,7 @@ footer p {
     border-radius: 20px;
 }
 
-.categories-img:hover{
+.categories-img:hover {
     transform: scale(1.05);
 }
 
@@ -666,7 +667,47 @@ footer p {
 
 /* _________________________ Contact Us Page _________________________ */
 
-/* Alexandre */
+.contact-us-form {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9fafb;
+}
+
+.contact-us-btn {
+    background-color: #ff7014;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contact-us-btn:hover {
+    background-color: #e85d0a;
+}
+
+.contact-us-info {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.contact-info-list {
+    padding: 0;
+    list-style: none;
+}
+
+.contact-info-list li {
+    margin-bottom: 15px;
+}
+
+.contact-info-list li i {
+    color: #ff7014;
+}
+
+.social-links img {
+    height: 30px;
+    width: 30px;
+}
 
 /* ______________________ Responsive Adjustments ______________________ */
 
