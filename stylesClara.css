@@ -4,6 +4,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    color: inherit;
 }
 
 html,
@@ -104,6 +105,138 @@ footer p {
     color: white;
     text-shadow: 2px 2px 4px rgba(158, 153, 153, 0.6);
 }
+
+/*main content*/
+/*modalities*/
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.categories h5 {
+    color: #ff7014;
+}
+
+.categories.reverse {
+    flex-direction: row-reverse;
+    padding-bottom: 50px;
+}
+
+.categories.reverse h5 {
+    color: #ff7014;
+}
+
+.categories-img{
+    width: 250px;
+    padding: 10px;
+    display: block;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.text{
+    flex= 1;
+}
+
+/*specifications for small screens*/
+@media (max-width: 751px) {
+    .categories {
+        flex-direction: column; /
+        align-items: center;
+        text-align: center;
+    }
+
+    .categories.reverse {
+        flex-direction: column; 
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .categories-img {
+        margin-bottom: 15px;
+    }
+}
+
+/*tips section*/
+
+/*main content*/
+/*modalities*/
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.categories h5 {
+    color: #ff7014;
+}
+
+.categories.reverse {
+    flex-direction: row-reverse;
+    padding-bottom: 50px;
+}
+
+.categories.reverse h5 {
+    color: #ff7014;
+}
+
+.categories-img{
+    width: 250px;
+    padding: 10px;
+    display: block;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.text{
+    flex= 1;
+}
+
+/*specifications for small screens*/
+@media (max-width: 751px) {
+    .categories {
+        flex-direction: column; /
+        align-items: center;
+        text-align: center;
+    }
+
+    .categories.reverse {
+        flex-direction: column; 
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .categories-img {
+        margin-bottom: 15px;
+    }
+}
+
+/*tips section*/
 
 /* ____________________ Swimming Page ____________________ */
 /*description */
