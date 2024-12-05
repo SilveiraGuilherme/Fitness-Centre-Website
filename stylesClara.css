@@ -169,6 +169,27 @@ footer p {
     color: #ff7014;
 }
 
+/*specifications for small screens*/
+@media (max-width: 751px) {
+    .categories {
+        text-align: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .categories.reverse {
+        flex-direction: column; 
+    }
+
+    .categories-img {
+        margin-bottom: 10px;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
 /*tips section*/
 
 .health-routine {
