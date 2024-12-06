@@ -103,12 +103,18 @@ footer p {
 /* ____________________ Swimming Page ____________________ */
 /*description */
 .swimming-class img {
-    height: 300px;
+    height: 350px;
     width: 100%;
 }
 
-.swimming-description h3 {
-    padding-top: 30px;
+.swimming-description h1 {
+    padding-top: 3px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.swimming-description p {
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -120,39 +126,67 @@ footer p {
     text-align: center;
 }
 
+.card-swimming h3 {
+    padding-bottom: 5px;
+}
+
 .strokes {
     padding-bottom: 50px;
 }
 
-.strcards {
+.strokes-cards{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px;
-    max-height: 700px;
-    margin: 10px auto;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
-.strcards:hover {
+.strcards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 22%;
+    margin: 5px 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.strcards:hover{
     transform: scale(1.05);
     color: #ff7014;
 }
 
 .stroke-img-top {
-    padding: 10px;
-    width: 250px;
-    display: block;
-    object-fit: cover;
+    max-width: 100%;
     height: 150px;
+    object-fit: cover;
     border-radius: 20px;
-    margin-bottom: 10px;
 }
 
+.stroke-body{
+    flex-grow: 1;
+    /*content takes up remaining space*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card-text,
+.card-title {
+    margin: 0 auto;
+    padding: 5px 10px;
+}
 
 /*age group division*/
 .class-division h3 {
     text-align: center;
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .types {
