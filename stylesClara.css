@@ -103,12 +103,12 @@ footer p {
 /* ____________________ Swimming Page ____________________ */
 /*description */
 .swimming-class img {
-    height: 300px;
+    height: 400px;
     width: 100%;
 }
 
 .swimming-description h3 {
-    padding-top: 30px;
+    padding-top: 5px;
     text-align: center;
 }
 
