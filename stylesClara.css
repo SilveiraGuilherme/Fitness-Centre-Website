@@ -2,9 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: inherit;
+    box-sizing: border-box;
 }
 
 html,
@@ -26,14 +24,14 @@ main {
     /* Keeps the button in a fixed position on the screen */
     top: 20px;
     /* Distance from the top of the viewport */
-    right: 20px;
-    /* Distance from the right of the viewport */
+    left: 110px;
+    /* Distance from the left of the viewport */
     z-index: 1000;
     /* Ensures it stays on top of other elements */
     padding: 10px 15px;
-    background-color: #ff7014;
+    background-color: #e6faff;
     /* Highlight color to make it visible */
-    color: white;
+    color: rgb(31, 106, 147);
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -44,41 +42,61 @@ main {
 }
 
 .floating-button:hover {
-    background-color: #ff7014;
+    background-color: #e6faff;
     /* Darker shade on hover */
     transform: scale(1.1);
     /* Slight zoom effect */
 }
 
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6faff;
+    color: #333;
+}
+
 /* ________________________ Header ________________________ */
 .logo {
-    width: 100px;
+    width: 80px;
+    height: 70px;
     display: block;
 }
 
 header {
-    background-color: black;
+    color: white;
+    position: fixed; 
+    left: 0;
+    top: 0;
+    z-index: 1000; /*on top of all elements*/
+    background-color: rgba(0, 0, 0, 0.6); 
+    width: 100%;
 }
 
 .navbar {
-    padding: 16px 32px;
+    padding: 6px 8px;
 }
-
-.navbar .nav-item .nav-link {
-    color: #ff7014;
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .navbar .dropdown-menu {
-    background-color: black;
+    background-color:#e6faff;
 }
 
 .navbar .dropdown-menu .dropdown-item {
-    color: #ff7014;
+    color: rgb(54, 119, 177);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(54, 119, 177); 
 }
 
 /* ________________________ Footer ________________________ */
 footer {
-    background-color: black;
+    background-color: rgb(54, 119, 177);
     color: #e5e7eb;
     padding: 20px 40px;
     display: flex;
@@ -100,27 +118,35 @@ footer p {
     height: 24px;
 }
 
-/* ____________________ Swimming Page ____________________ */
+/*main content*/
 /*description */
 .swimming-class img {
-    height: 350px;
+    height: 100vh;
     width: 100%;
 }
 
 .swimming-description h1 {
-    padding-top: 3px;
+    padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(54, 119, 177, 0.5);
 }
 
 .swimming-description p {
     padding-top: 10px;
     text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(54, 119, 177, 0.5)
 }
 
 /*types of strokes*/
 .card-swimming {
-    margin-top: 50px;
+    margin-top: 30px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -128,6 +154,7 @@ footer p {
 
 .card-swimming h3 {
     padding-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(54, 119, 177, 0.5);
 }
 
 .strokes {
@@ -148,16 +175,18 @@ footer p {
     flex: 1 1 22%;
     margin: 5px 0;
     border: 1px solid transparent;
-    border-radius: 5px;
     padding: 10px;
+    position: relative;
+    overflow: hidden;
     text-align: center;
     align-items: center;
     box-sizing: border-box;
+    transition: transform 0.5s ease;
 }
 
 .strcards:hover{
     transform: scale(1.05);
-    color: #ff7014;
+    color: rgb(54, 119, 177);
 }
 
 .stroke-img-top {
@@ -167,6 +196,14 @@ footer p {
     border-radius: 20px;
 }
 
+.strokes::after {
+    content: "To discover more about the different types of strokes, hover over each one";
+    display: block; 
+    margin-top: 20px;
+    font-size: 18px; 
+    text-shadow: 2px 2px 4px rgba(54, 119, 177, 0.5);
+}
+
 .stroke-body{
     flex-grow: 1;
     /*content takes up remaining space*/
@@ -174,6 +211,17 @@ footer p {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+}
+
+/*showing the content presented on type of strokes*/
+.strcards:hover .stroke-body {
+    opacity: 1;
+}
+
+/*hiding the content presented on type of strokes*/
+.strcards .stroke-body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .card-text,
@@ -213,58 +261,5 @@ footer p {
     object-fit: cover;
     height: 150px;
     border-radius: 20px;
-}
-
-
-/*review section */
-.review {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    padding: 50px 20px;
-}
-
-.review h2 {
-    color: #ff7014;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.blockquote {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 5px;
-    font-style: italic;
-    color: #e5e7eb;
-    text-align: center;
-}
-
-.blockquote-footer {
-    color: #ff7014 !important;
-    font-size: 0.9rem;
-    margin-top: 10px;
-}
-
-/* Quote Section */
-.quote {
-    background-color: #ff7014;
-    color: white;
-    text-align: center;
-    padding: 30px 10%;
-    border-radius: 10px;
-    font-size: 16px;
-}
-
-.quote blockquote {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.6;
-}
-
-.quote cite {
-    font-size: 14px;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.8);
-    margin-top: 10px;
-    display: block;
 }
 
