@@ -192,8 +192,9 @@ footer p {
     padding-bottom: 40px;
 }
 
-.anchor-plans {
-    text-decoration: none;
+.redirect{
+    margin-top: 0;
+    background-color: #ff7014; text-decoration: none;
     color: white;
     background-color: #ff7014;
     border: 2px solid #ff7014;
@@ -203,21 +204,16 @@ footer p {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.anchor-plans:hover {
-    background-color: white;
-    color: #ff7014;
-}
-
 /*tips section*/
 .health-routine {
-    margin-top: 25px;
+    margin-top: 35px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .health-routine h3 {
-    padding-bottom: 5px;
+    padding-bottom: 0;
 }
 
 .tips {
@@ -593,32 +589,6 @@ footer p {
     /* Slight zoom effect */
 }
 
-/* Header Section */
-.logo {
-    width: 100px;
-    display: block;
-}
-
-header {
-    background-color: black;
-}
-
-.navbar {
-    padding: 16px 32px;
-}
-
-.navbar .nav-item .nav-link {
-    color: #ff7014;
-}
-
-.navbar .dropdown-menu {
-    background-color: black;
-}
-
-.navbar .dropdown-menu .dropdown-item {
-    color: #ff7014;
-}
-
 /* Video Background Section */
 .video-background {
     position: relative;
@@ -660,6 +630,22 @@ header {
 
 .content-overlay .btn {
     margin-top: 20px;
+}
+
+.anchor-plans {
+    text-decoration: none;
+    color: white;
+    background-color: #ff7014;
+    border: 2px solid #ff7014;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.anchor-plans:hover {
+    background-color: white;
+    color: #ff7014;
 }
 
 /* Sentence Design Section */
