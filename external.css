@@ -274,7 +274,7 @@ footer p {
 
 .btn-light {
     border-color: transparent;
-    color: #000;
+    color: black;
     border-radius: 10px;
     display: inline-block;
     transition: background-color 0.3s ease;
