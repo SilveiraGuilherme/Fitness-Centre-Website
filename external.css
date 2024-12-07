@@ -115,6 +115,7 @@ footer p {
 .introduction p {
     color: white;
     text-shadow: 2px 2px 4px rgba(158, 153, 153, 0.6);
+    font-weight: bol;
 }
 
 /*main content*/
@@ -139,6 +140,10 @@ footer p {
 .modalities {
     text-align: center;
     width: 90%;
+}
+
+.modalities h3{
+    font-weight: bold;
 }
 
 .categories {
@@ -224,6 +229,7 @@ footer p {
 
 .health-routine h3 {
     padding-bottom: 0;
+    font-weight: bold;
 }
 
 .tips {
@@ -305,6 +311,7 @@ footer p {
 .products h3 {
     margin-top: 50px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /* ____________________ Modalities Pages ____________________ */
@@ -1045,6 +1052,19 @@ a:hover {
 @media (max-width: 768px) {
 
     /* Index Page */
+    .tip-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .health-card {
+        flex: 1 1 100%;
+        /*card occupy the whole container*/
+        margin: 5px 0;
+    }
+
+
     .categories {
         text-align: center;
         align-items: center;
@@ -1053,6 +1073,14 @@ a:hover {
 
     .categories.reverse {
         flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .categories.reverse h5 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
     .categories-img {

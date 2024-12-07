@@ -1,17 +1,22 @@
 // Select nav-links and dropdown items and get the active path
-const navLinks = document.querySelectorAll(".nav-link, .dropdown-item");
-const activePath = window.location.pathname.split("/").pop();
+const menuLinks = document.querySelectorAll(".nav-link, .dropdown-item");
+const currentPath = window.location.pathname.split("/").pop();
 
-//show the active link at the moment
-navLinks.forEach((link) => {
-  const linkPath = link.getAttribute("href").split("/").pop();
-  if (linkPath === activePath) {
-    link.classList.add("active"); 
+//show the active link item at the moment
+menuLinks.forEach((linkItem) => {
+  const linkItemPath = linkItem.getAttribute("href").split("/").pop();
 
-    const parentDropdown = link.closest(".dropdown-menu");
-    if (parentDropdown) {
-      const dropdownToggle = parentDropdown.previousElementSibling;
-      dropdownToggle.classList.add("active");
+  if (linkItemPath === currentPath) {
+    linkItem.classList.add("active");
+
+    //dropdown link item
+    const dropdownParent = linkItem.closest(".dropdown-menu");
+    if (dropdownParent) {
+      const dropdownToggle = dropdownParent.previousElementSibling;
+      if (dropdownToggle) {
+        dropdownToggle.classList.add("active");
+      }
     }
   }
 });
+
