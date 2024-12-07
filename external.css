@@ -273,7 +273,7 @@ footer p {
 }
 
 .btn-light {
-    border-color: transparent;
+    border-color: #ff7014;
     color: black;
     border-radius: 10px;
     display: inline-block;
@@ -281,9 +281,9 @@ footer p {
 }
 
 .btn-light:hover {
-    background-color: #ff7014;
+    background-color: white;
     border-color: #ff7014;
-    color: white;
+    color: #ff7014;
 }
 
 .collapse {
