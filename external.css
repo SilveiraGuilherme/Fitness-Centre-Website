@@ -667,7 +667,8 @@ header {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 2.5rem;
     font-weight: 500;
-    color: #0c0601;
+    font-weight: bold;
+    color: black;
     text-align: center;
     letter-spacing: 1px;
     padding: 20px 0;
@@ -677,7 +678,7 @@ header {
 }
 
 .alexandre-content h2:hover {
-    color: #d45a00;
+    color: #ff7014;
     text-decoration: underline;
     transform: translateY(-2px);
     transition: all 0.2s ease-in-out;
@@ -690,13 +691,6 @@ header {
     color: #333;
     padding: 50px 20px;
     font-family: Arial, sans-serif;
-}
-
-/* Estilo para o título */
-.alexandre-content h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #0056b3;
 }
 
 /* Acarousel image adjustments */
@@ -731,24 +725,24 @@ header {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #0056b3;
+    background-color: #ff7014;
 }
 
 .carousel-indicators .active {
-    background-color: #ff9900;
+    background-color: #ff7014;
 }
 
 /* Carrousel controls */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #0056b3;
+    background-color: #ff7014;
     border-radius: 50%;
     padding: 10px;
 }
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: #ff9900;
+    background-color: #ff7014;
     transform: scale(1.1);
 }
 
@@ -842,7 +836,7 @@ header {
 /* Testimonial Section */
 .testimonials-section h2 {
     font-size: 36px;
-    text-shadow: 2px 2px 4px rgba(54, 119, 177, 0.5);
+    text-shadow: 2px 2px 4px rgba(160, 172, 182, 0.5);
     margin-bottom: 30px;
 }
 
@@ -850,7 +844,7 @@ header {
     font-size: 16px;
     color: #34495e;
     font-style: italic;
-    border-left: 5px solid #2980b9;
+    border-left: 5px solid #ff7014;
     padding-left: 20px;
 }
 
@@ -861,7 +855,7 @@ header {
 }
 
 Section .contact-link {
-    background-color: #2980b9;
+    background-color: #ff7014;
     color: white;
     padding: 20px;
     border-radius: 5px;
@@ -870,7 +864,7 @@ Section .contact-link {
 
 .contact-link a {
     display: inline-block;
-    color: rgb(31, 102, 147);
+    color: #ff7014;
     font-weight: bold;
     font-size: 18px;
     padding: 10px 20px;
@@ -883,8 +877,8 @@ Section .contact-link {
 
 .contact-link a:hover {
     background-color: white;
-    color: rgb(0, 82, 102);
-    border: 2px solid rgb(0, 82, 102);
+    color: rgb(160, 172, 182);
+    border: 2px solid rgb(160, 172, 182);
 }
 
 
@@ -1108,7 +1102,7 @@ a:hover {
 
 /* Get in Touch Section */
 .get-in-touch {
-    color: #e85d0a;
+    color: #ff7014;
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
@@ -1133,7 +1127,7 @@ a:hover {
 }
 
 .contact-us-btn:hover {
-    background-color: #e85d0a;
+    background-color: #ff7014;
 }
 
 /* ______________________ Responsive Adjustments ______________________ */
