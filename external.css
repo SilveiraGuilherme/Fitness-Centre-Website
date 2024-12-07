@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+    font-family: "Sans", sans-serif;
 }
 
 main {
@@ -32,6 +33,7 @@ header {
 
 .navbar {
     padding: 16px 32px;
+    font-family: "Courier";
 }
 
 .navbar .nav-item .nav-link {
@@ -39,7 +41,7 @@ header {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: white; 
+    color: white;
 }
 
 .navbar .dropdown-menu {
@@ -190,8 +192,9 @@ footer p {
     padding-bottom: 40px;
 }
 
-.anchor-plans {
-    text-decoration: none;
+.redirect{
+    margin-top: 0;
+    background-color: #ff7014; text-decoration: none;
     color: white;
     background-color: #ff7014;
     border: 2px solid #ff7014;
@@ -201,21 +204,16 @@ footer p {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.anchor-plans:hover {
-    background-color: white;
-    color: #ff7014;
-}
-
 /*tips section*/
 .health-routine {
-    margin-top: 25px;
+    margin-top: 35px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .health-routine h3 {
-    padding-bottom: 5px;
+    padding-bottom: 0;
 }
 
 .tips {
@@ -271,17 +269,17 @@ footer p {
 }
 
 .btn-light {
-    border-color: transparent;
-    color: #000;
+    border-color: #ff7014;
+    color: black;
     border-radius: 10px;
     display: inline-block;
     transition: background-color 0.3s ease;
 }
 
 .btn-light:hover {
-    background-color: #ff7014;
+    background-color: white;
     border-color: #ff7014;
-    color: white;
+    color: #ff7014;
 }
 
 .collapse {
@@ -340,6 +338,7 @@ footer p {
 
 .testimonials-section blockquote {
     font-size: 18px;
+    font-family: "Monaco";
     color: #333;
     font-style: italic;
     border-left: 5px solid #ff7014;
@@ -479,14 +478,14 @@ footer p {
     padding-bottom: 50px;
 }
 
-.strokes-cards{
+.strokes-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
 }
 
-.strcards{
+.strcards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -499,7 +498,7 @@ footer p {
     box-sizing: border-box;
 }
 
-.strcards:hover{
+.strcards:hover {
     transform: scale(1.05);
     color: #ff7014;
 }
@@ -511,7 +510,7 @@ footer p {
     border-radius: 20px;
 }
 
-.stroke-body{
+.stroke-body {
     flex-grow: 1;
     /*content takes up remaining space*/
     display: flex;
@@ -561,8 +560,265 @@ footer p {
 
 
 /* _______________________ Gym Page _______________________ */
+/* Floating Button */
+.floating-button {
+    position: fixed;
+    /* Keeps the button in a fixed position on the screen */
+    top: 20px;
+    /* Distance from the top of the viewport */
+    right: 20px;
+    /* Distance from the right of the viewport */
+    z-index: 1000;
+    /* Ensures it stays on top of other elements */
+    padding: 10px 15px;
+    background-color: #ff7014;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for better visibility */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Add a hover effect */
+}
 
-/* Alexandre */
+.floating-button:hover {
+    background-color: #e65d00;
+    /* Darker shade on hover */
+    transform: scale(1.1);
+    /* Slight zoom effect */
+}
+
+/* Video Background Section */
+.video-background {
+    position: relative;
+    height: 50vh;
+    /* Occupies half the viewport height */
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    /* Places the video behind other elements */
+    object-fit: cover;
+    /* Ensures the video fills the section */
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    /* Ensures content is above the video */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.content-overlay h1,
+.content-overlay p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.content-overlay .btn {
+    margin-top: 20px;
+}
+
+.anchor-plans {
+    text-decoration: none;
+    color: white;
+    background-color: #ff7014;
+    border: 2px solid #ff7014;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.anchor-plans:hover {
+    background-color: white;
+    color: #ff7014;
+}
+
+/* Sentence Design Section */
+.alexandre-content h2 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    text-transform: capitalize;
+    background: transparent;
+    border-bottom: 2px solid white;
+}
+
+.alexandre-content h2:hover {
+    color: #ff7014;
+    text-decoration: underline;
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Carousel style */
+.alexandre-content {
+    background-color: white;
+    color: #333;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Acarousel image adjustments */
+.carousel-inner img {
+    width: 100%;
+    max-width: 1200px;
+    max-height: 550px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    color: white;
+}
+
+/* Carousel Indicators */
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff7014;
+}
+
+.carousel-indicators .active {
+    background-color: #ff7014;
+}
+
+/* Carrousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ff7014;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #ff7014;
+    transform: scale(1.1);
+}
+
+.carousel-inner .carousel-item {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Equipment Section */
+.equipment-section {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.equipment-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.equipment-card:hover {
+    transform: scale(1.05);
+}
+
+.equipment-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.equipment-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.equipment-info h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.equipment-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Team Section */
+.trainer-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.trainer-image img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.trainer-card:hover .trainer-image img {
+    transform: scale(1.1);
+}
+
+.trainer-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.trainer-card:hover .trainer-info {
+    transform: translateY(0);
+}
+
 
 /* ______________________ Plans Page ______________________ */
 
@@ -732,46 +988,60 @@ footer p {
 
 /* _________________________ Contact Us Page _________________________ */
 
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Top Image */
+.top-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Get in Touch Section */
+.get-in-touch {
+    color: #ff7014;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Formulário de Contato */
 .contact-us-form {
     padding: 20px;
     border-radius: 10px;
-    background-color: #f9fafb;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-us-btn {
     background-color: #ff7014;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 15px;
+    border: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .contact-us-btn:hover {
-    background-color: #e85d0a;
-}
-
-.contact-us-info {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-.contact-info-list {
-    padding: 0;
-    list-style: none;
-}
-
-.contact-info-list li {
-    margin-bottom: 15px;
-}
-
-.contact-info-list li i {
-    color: #ff7014;
-}
-
-.social-links img {
-    height: 30px;
-    width: 30px;
+    background-color: #ff7014;
 }
 
 /* ______________________ Responsive Adjustments ______________________ */
@@ -791,7 +1061,7 @@ footer p {
         margin: 0 auto 20px;
     }
 }
-  
+
 @media (max-width: 768px) {
 
     /* Index Page */
@@ -823,16 +1093,16 @@ footer p {
         flex: 1 1 100%;
         /*card occupy the whole container*/
         margin: 5px 0;
-    } 
+    }
 
     /*Swimming Page*/
-    .types{
+    .types {
         text-align: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .types-image{
+    .types-image {
         margin-bottom: 10px;
     }
 
