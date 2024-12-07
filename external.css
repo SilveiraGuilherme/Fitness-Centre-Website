@@ -44,6 +44,11 @@ header {
     color: white;
 }
 
+.nav-link.active {
+    font-weight: bold;
+    color: white !important;
+}
+
 .navbar .dropdown-menu {
     background-color: black;
 }
@@ -51,7 +56,7 @@ header {
 .navbar .dropdown-menu .dropdown-item {
     color: #ff7014;
 }
-
+  
 /* ________________________ Footer ________________________ */
 footer {
     background-color: black;
@@ -192,18 +197,22 @@ footer p {
     padding-bottom: 40px;
 }
 
-.redirect {
-    margin-top: 0;
-    background-color: #ff7014;
+.anchor-plans {
     text-decoration: none;
     color: white;
     background-color: #ff7014;
-    border: 2px solid #ff7014;
+    border: 1px solid #ff7014;
     border-radius: 10px;
     font-weight: bold;
     padding: 5px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+
+.anchor-plans:hover {
+    background-color: white;
+    color: #ff7014;
+}
+
 
 /*tips section*/
 .health-routine {

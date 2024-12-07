@@ -117,6 +117,23 @@ header {
     transition: all 0.2s ease-in-out;
 }
 
+.anchor-plans {
+    text-decoration: none;
+    color: white;
+    background-color: #ff7014;
+    border: 2px solid #ff7014;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.anchor-plans:hover {
+    background-color: white;
+    color: #ff7014;
+}
+
+
 
 /* Carousel style */
 .alexandre-content {
