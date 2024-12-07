@@ -9,259 +9,249 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="external.css">
-
+  <!-- <link rel="stylesheet" href="external.css"/> -->
+  <link rel="stylesheet" href="stylesAlex.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
 </head>
 
 <body>
   <header>
-    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="index.html" aria-label="HomePage">
-        <a class="navbar-brand" href="index.html" aria-label="Home">
-          <img src="images/logos/go-training.jpg" alt="Go Training Logo" class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" @ -32,17
-          +33,17 @@ </li>
+      <a class="navbar-brand" href="index.html" aria-label="Home">
+        <img src="images/logos/go-training.jpg" alt="Go Training Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" aria-label="HomePage">Home</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="modalitiesDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false" aria-label="Modalities">Modalities</a>
-            aria-expanded="false" aria-label="Modalities">
-            Modalities
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="modalitiesDropdown">
-        <li><a class="dropdown-item" href="crossfit.html" aria-current="page" aria-label="Crossfit">CrossFit</a>
-        </li>
-        <li><a class="dropdown-item" href="swimming.html" aria-label="Swimming">Swimming</a>
-        </li>
-        <li><a class="dropdown-item" href="gym.html" aria-label="Open Gym">Open Gym</a></li>
-        <li><a class="dropdown-item" href="crossfit.html">CrossFit</a></li>
-        <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
-        <li><a class="dropdown-item" href="gym.html">Open Gym</a></li>
-      </ul>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="plans.html" aria-label="Plans">Plans</a>
-        <a class="nav-link" href="plans.html" aria-current="page" aria-label="Plans">Plans</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact_us.html" aria-label="ContactUs">Contact Us</a>
-        @ -53,8 +54,201 @@
+              aria-expanded="false" aria-label="Modalities">
+              Modalities
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="modalitiesDropdown">
+              <li><a class="dropdown-item" href="crossfit.html">CrossFit</a></li>
+              <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+              <li><a class="dropdown-item" href="gym.html">Open Gym</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plans.html" aria-current="page" aria-label="Plans">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html" aria-label="ContactUs">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <div>Alexandre Content</div>
-      <section class="video-background">
-        <div class="content-overlay">
-          <h1 class="text-light text-center">Welcome to the place that polishes your body and spirit</h1>
-          <p class="text-light text-center">The first step starts here</p>
-          <a href="plans.html" class="btn btn-primary">Join Now</a>
-        </div>
-        <video autoplay muted loop class="background-video">
-          <source src="videos/GymWorkout.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-      </section>
-      <section class="alexandre-content py-5">
-        <div class="container">
-          <h2 class="text-center mb-4">Explore some of our open Gym facilities</h2>
-          <div id="gymCarousel" class="carousel slide" data-bs-ride="carousel">
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
-            <!-- Carousel Images -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/workout.jpg" class="d-block w-100" alt="State-of-the-art gym equipment">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>HIIT area</h5>
-                  <p>Our professional staff is here to guide and motivate you every step of the way.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/womantraining.jpg" class="d-block w-100" alt="Spacious workout area">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Spacious Workout Area</h5>
-                  <p>Plenty of space to move, lift, and train without feeling crowded.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/treadmill.jpg" class="d-block w-100" alt="Friendly and professional trainers">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Don`t forget the cardio !</h5>
-                  <p>Experience our top-notch machines designed to help you achieve your fitness
-                    goals.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#gymCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#gymCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-              <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-            </button>
-          </div>
-
-          <section class="equipment-section py-5">
-            <div class="container">
-              <h2 class="text-center mb-4">Our Gym Equipment</h2>
-              <div class="row">
-
-                <!-- Musculação Equipment 1 -->
-                <div class="col-md-4 mb-4">
-                  <div class="equipment-card">
-                    <img src="images/Strength machine.jpg" class="img-fluid" alt="Muscle Equipment">
-                    <div class="equipment-info">
-                      <h5>Strength Machines</h5>
-                      <p>Our strength training machines are designed for maximum safety and
-                        effectiveness, perfect for
-                        building muscle mass.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Musculação Equipment 2 -->
-                <div class="col-md-4 mb-4">
-                  <div class="equipment-card">
-                    <img src="images/free weights.jpg" class="img-fluid" alt="Muscle Equipment">
-                    <div class="equipment-info">
-                      <h5>Free Weights</h5>
-                      <p>Fully stocked with dumbbells, barbells, and kettlebells for the ultimate
-                        strength and power
-                        training.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Cardio Equipment 1 -->
-                <div class="col-md-4 mb-4">
-                  <div class="equipment-card">
-                    <img src="images/treadmill.jpg" class="img-fluid" alt="Cardio Equipment">
-                    <div class="equipment-info">
-                      <h5>Treadmills</h5>
-                      <p>Our state-of-the-art treadmills are perfect for runners and walkers
-                        alike, offering a smooth
-                        experience with multiple settings.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <!-- Cardio Equipment 2 -->
-                <div class="col-md-4 mb-4">
-                  <div class="equipment-card">
-                    <img src="images/Rowing Machine.jpg" class="img-fluid" alt="Cardio Equipment">
-                    <div class="equipment-info">
-                      <h5>Rowing Machines</h5>
-                      <p>Engage your entire body with our rowing machines, perfect for building
-                        endurance and toning
-                        muscles.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Cardio Equipment 3 -->
-                <div class="col-md-4 mb-4">
-                  <div class="equipment-card">
-                    <img src="images/Stationary Bike.jpg" class="img-fluid" alt="Cardio Equipment">
-                    <div class="equipment-info">
-                      <h5>Stationary Bikes</h5>
-                      <p>Enjoy an intense cardio session with our top-of-the-line stationary
-                        bikes, featuring adjustable
-                        resistance for all levels.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Cardio Equipment 4 -->
-                <div class="col-md-4 mb-4">
-                  <div class="equipment-card">
-                    <img src="images/Elliptical machine.jpg" class="img-fluid" alt="Cardio Equipment">
-                    <div class="equipment-info">
-                      <h5>Elliptical Machines</h5>
-                      <p>Our elliptical machines are perfect for low-impact cardio that burns
-                        calories efficiently while
-                        being easy on your joints.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Team Section -->
-          <section class="team-section py-5">
-            <div class="container">
-              <h2 class="text-center mb-4">Meet Our Trainers</h2>
-              <div class="row">
-                <!-- Personal Trainer 1 -->
-                <div class="col-md-4 text-center trainer-card">
-                  <div class="trainer-image">
-                    <img src="images/Guilherme.jpeg" alt="Trainer 1" class="rounded-circle">
-                    <div class="trainer-info">
-                      <h5>Alex Johnson</h5>
-                      <p>Strength & Conditioning Expert</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Personal Trainer 2 -->
-                <div class="col-md-4 text-center trainer-card">
-                  <div class="trainer-image">
-                    <img src="images/clara.jpeg" alt="Trainer 2" class="rounded-circle">
-                    <div class="trainer-info">
-                      <h5>Maria Lopez</h5>
-                      <p>Certified Yoga Instructor</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Personal Trainer 3 -->
-                <div class="col-md-4 text-center trainer-card">
-                  <div class="trainer-image">
-                    <img src="images/Alexandre.jpeg" alt="Trainer 3" class="rounded-circle">
-                    <div class="trainer-info">
-                      <h5>John Doe</h5>
-                      <p>HIIT Specialist</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-
-          <!-- Description -->
-          <div class="mt-4 text-center">
-            <p class="lead"><b>Our Open Gym is equipped with cutting-edge facilities and a welcoming
-                environment to help
-                you reach
-                your fitness potential. From high-quality equipment to expert guidance, we have
-                everything you need to
-                excel. </b>
-            </p>
-            <a href="plans.html" class="btn btn-primary">Explore Membership Plans</a>
-          </div>
-        </div>
-      </section>
+    <section class="video-background">
+      <div class="content-overlay">
+        <h1 class="text-light text-center">Welcome to the place that polishes your body and spirit</h1>
+        <p class="text-light text-center">The first step starts here</p>
+        <a href="plans.html" class="btn btn-primary">Join Now</a>
       </div>
+      <video autoplay muted loop class="background-video">
+        <source src="videos/Gym workout.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
     </section>
+    <section class="alexandre-content py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Explore Some Of Our Open Gym Facilities</h2>
+        <div id="gymCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <!-- Carousel Images -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/workout.jpg" class="d-block w-100" alt="State-of-the-art gym equipment">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>HIIT area</h5>
+                <p>Our professional staff is here to guide and motivate you every step of the way.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/womantraining.jpg" class="d-block w-100" alt="Spacious workout area">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Spacious Workout Area</h5>
+                <p>Plenty of space to move, lift, and train without feeling crowded.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/treadmill.jpg" class="d-block w-100" alt="Friendly and professional trainers">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Dont forget the cardio !</h5>
+                <p>Experience our top-notch machines designed to help you achieve your fitness goals.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#gymCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#gymCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+          </button>
+        </div>
+
+        <section class="equipment-section py-5">
+          <div class="container">
+            <h2 class="text-center mb-4">Our Gym Equipment</h2>
+            <div class="row">
+
+              <!-- Equipment 1 -->
+              <div class="col-md-4 mb-4">
+                <div class="equipment-card">
+                  <img src="images/Strength machine.jpg" class="img-fluid" alt="Muscle Equipment">
+                  <div class="equipment-info">
+                    <h5>Strength Machines</h5>
+                    <p>Our strength training machines are designed for maximum safety and effectiveness, perfect for
+                      building muscle mass.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Equipment 2 -->
+              <div class="col-md-4 mb-4">
+                <div class="equipment-card">
+                  <img src="images/free weights.jpg" class="img-fluid" alt="Muscle Equipment">
+                  <div class="equipment-info">
+                    <h5>Free Weights</h5>
+                    <p>Fully stocked with dumbbells, barbells, and kettlebells for the ultimate strength and power
+                      training.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cardio Equipment 1 -->
+              <div class="col-md-4 mb-4">
+                <div class="equipment-card">
+                  <img src="images/treadmill.jpg" class="img-fluid" alt="Cardio Equipment">
+                  <div class="equipment-info">
+                    <h5>Treadmills</h5>
+                    <p>Our state-of-the-art treadmills are perfect for runners and walkers alike, offering a smooth
+                      experience with multiple settings.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Cardio Equipment 2 -->
+              <div class="col-md-4 mb-4">
+                <div class="equipment-card">
+                  <img src="images/Rowing Machine.jpg" class="img-fluid" alt="Cardio Equipment">
+                  <div class="equipment-info">
+                    <h5>Rowing Machines</h5>
+                    <p>Engage your entire body with our rowing machines, perfect for building endurance and toning
+                      muscles.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cardio Equipment 3 -->
+              <div class="col-md-4 mb-4">
+                <div class="equipment-card">
+                  <img src="images/Stationary Bike.jpg" class="img-fluid" alt="Cardio Equipment">
+                  <div class="equipment-info">
+                    <h5>Stationary Bikes</h5>
+                    <p>Enjoy an intense cardio session with our top-of-the-line stationary bikes, featuring adjustable
+                      resistance for all levels.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cardio Equipment 4 -->
+              <div class="col-md-4 mb-4">
+                <div class="equipment-card">
+                  <img src="images/Elliptical machine.jpg" class="img-fluid" alt="Cardio Equipment">
+                  <div class="equipment-info">
+                    <h5>Elliptical Machines</h5>
+                    <p>Our elliptical machines are perfect for low-impact cardio that burns calories efficiently while
+                      being easy on your joints.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section py-5">
+          <div class="container">
+            <h2 class="text-center mb-4">Meet Our Trainers</h2>
+            <div class="row">
+              <!-- Personal Trainer 1 -->
+              <div class="col-md-4 text-center trainer-card">
+                <div class="trainer-image">
+                  <img src="images/Guilherme.jpeg" alt="Trainer 1" class="rounded-circle">
+                  <div class="trainer-info">
+                    <h5>Alex Johnson</h5>
+                    <p>Strength & Conditioning Expert</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Personal Trainer 2 -->
+              <div class="col-md-4 text-center trainer-card">
+                <div class="trainer-image">
+                  <img src="images/clara.jpeg" alt="Trainer 2" class="rounded-circle">
+                  <div class="trainer-info">
+                    <h5>Maria Lopez</h5>
+                    <p>Certified Yoga Instructor</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Personal Trainer 3 -->
+              <div class="col-md-4 text-center trainer-card">
+                <div class="trainer-image">
+                  <img src="images/Alexandre.jpeg" alt="Trainer 3" class="rounded-circle">
+                  <div class="trainer-info">
+                    <h5>John Doe</h5>
+                    <p>HIIT Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Description -->
+        <div class="mt-4 text-center">
+          <p class="lead"><b>Our Open Gym is equipped with cutting-edge facilities and a welcoming environment to help
+              you reach
+              your fitness potential. From high-quality equipment to expert guidance, we have everything you need to
+              excel. </b>
+          </p>
+          <a href="plans.html" class="btn btn-primary">Explore Membership Plans</a>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    </section>
+
     <!-- Testimonials Section -->
     <section class="testimonials-section py-5">
       <div class="container">
@@ -269,16 +259,14 @@
         <div class="row">
           <div class="col-md-6 mb-4">
             <blockquote class="blockquote text-center">
-              <p>""The gym is spotless, and the equipment is always well-maintained. It’s clear they
-                prioritize
+              <p>""The gym is spotless, and the equipment is always well-maintained. It’s clear they prioritize
                 cleanliness and hygiene, which makes every visit so much more enjoyable.""</p>
               <p class="blockquote-footer">Schwarzenegger, Arnold</p>
             </blockquote>
           </div>
           <div class="col-md-6 mb-4">
             <blockquote class="blockquote text-center">
-              <p>""The gym has such a positive and supportive atmosphere. Everyone here—from the staff to
-                the
+              <p>""The gym has such a positive and supportive atmosphere. Everyone here—from the staff to the
                 members—makes you feel welcome and motivated to push yourself.""</p>
               <p class="blockquote-footer">Stallone, Silvester</p>
             </blockquote>
@@ -309,7 +297,6 @@
       </a>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>
