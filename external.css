@@ -192,9 +192,10 @@ footer p {
     padding-bottom: 40px;
 }
 
-.redirect{
+.redirect {
     margin-top: 0;
-    background-color: #ff7014; text-decoration: none;
+    background-color: #ff7014;
+    text-decoration: none;
     color: white;
     background-color: #ff7014;
     border: 2px solid #ff7014;
@@ -560,35 +561,6 @@ footer p {
 
 
 /* _______________________ Gym Page _______________________ */
-/* Floating Button */
-.floating-button {
-    position: fixed;
-    /* Keeps the button in a fixed position on the screen */
-    top: 20px;
-    /* Distance from the top of the viewport */
-    right: 20px;
-    /* Distance from the right of the viewport */
-    z-index: 1000;
-    /* Ensures it stays on top of other elements */
-    padding: 10px 15px;
-    background-color: #ff7014;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Subtle shadow for better visibility */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    /* Add a hover effect */
-}
-
-.floating-button:hover {
-    background-color: #e65d00;
-    /* Darker shade on hover */
-    transform: scale(1.1);
-    /* Slight zoom effect */
-}
-
 /* Video Background Section */
 .video-background {
     position: relative;
@@ -818,7 +790,6 @@ footer p {
 .trainer-card:hover .trainer-info {
     transform: translateY(0);
 }
-
 
 /* ______________________ Plans Page ______________________ */
 
