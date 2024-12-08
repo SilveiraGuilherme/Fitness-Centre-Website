@@ -121,7 +121,7 @@ footer p {
 /*main content*/
 /*description */
 .swimming-class img {
-    height: 100vh;
+    height: 400px;
     width: 100%;
 }
 
@@ -197,7 +197,7 @@ footer p {
 }
 
 .strokes::after {
-    content: "To discover more about the different types of strokes: Freestyle, Backstroke, Breaststroke and Butterfly, hover over each one";
+    content: "To discover more about the different types of strokes: Freestyle, Backstroke, Breaststroke and Butterfly, click or hover over each one";
     display: block; 
     margin-top: 20px;
     font-size: 18px; 
@@ -314,3 +314,22 @@ footer p {
     border: 2px solid rgb(0, 82, 102);
 }
 
+@media (max-width: 768px) {
+    .strcards .stroke-body {
+        opacity: 1;
+    }
+    
+    .types {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .types-image {
+        margin-bottom: 10px;
+    }
+
+    .text {
+        width: 100%;
+    }
+}

@@ -1052,6 +1052,12 @@ a:hover {
 @media (max-width: 768px) {
 
     /* Index Page */
+    .introduction video {
+        object-fit: contain; 
+        height: auto;
+        background-color: black;
+    }
+    
     .tip-cards {
         display: flex;
         flex-direction: column;
