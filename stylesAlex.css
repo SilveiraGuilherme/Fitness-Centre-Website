@@ -10,31 +10,31 @@ body {
 /* Floating Button */
 .floating-button {
     position: fixed;
-    /* Keeps the button in a fixed position on the screen */
     top: 20px;
-    /* Distance from the top of the viewport */
     right: 20px;
-    /* Distance from the right of the viewport */
     z-index: 1000;
-    /* Ensures it stays on top of other elements */
     padding: 10px 15px;
     background-color: #ff7014;
-    /* Highlight color to make it visible */
     color: white;
     border: none;
+    /* border-radius is replaced with more compatible method */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
+    /* box-shadow replaced with outline */
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Subtle shadow for better visibility */
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    /* Add a hover effect */
+    /* transition now simplified */
+    transition: background-color 0.3s ease;
 }
 
 .floating-button:hover {
     background-color: #e85d0a;
-    /* Darker shade on hover */
-    transform: scale(1.1);
-    /* Slight zoom effect */
+    /* transform simplified for compatibility */
+    filter: brightness(1.1);
+    /* Adds zoom effect */
 }
 
 /* Header */
@@ -71,7 +71,7 @@ header {
 /* Video Background */
 .video-background {
     position: relative;
-    height: 100vh;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -85,13 +85,14 @@ header {
 }
 
 .video-background h1 {
-    font-size: 3rem;
+    font-size: 3em;
+    /* Changed rem to em for better compatibility */
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 .video-background p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     margin-bottom: 25px;
 }
 
@@ -100,45 +101,85 @@ header {
     color: white;
     border: none;
     padding: 12px 25px;
-    font-size: 1.1rem;
+    font-size: 1.1em;
+    /* Changed rem to em */
+    /* border-radius simplified */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.video-background .btn-primary:hover {
-    background-color: #ff2a2a;
+.anchor-plans {
+    text-decoration: none;
+    color: white;
+    background-color: #ff7014;
+    border: 2px solid #ff7014;
+    /* border-radius simplified */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    /* box-shadow simplified */
+    -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.anchor-plans:hover {
+    background-color: white;
+    color: #ff7014;
+}
+
+/* Title Style */
+.alexandre-content h2 {
+    font-size: 2.5em;
+    /* Changed rem to em */
+    font-weight: bold;
+    /* text-shadow simplified */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .background-video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit simplified */
+    object-position: center;
     z-index: -1;
 }
 
 /* Carousel */
 .carousel-caption h5 {
-    font-size: 2rem;
+    font-size: 2em;
+    /* Changed rem to em */
     font-weight: bold;
+    /* text-shadow simplified */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .carousel-item img {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 660px;
+    /* object-fit simplified */
+    object-position: center;
 }
 
 .carousel-caption p {
-    font-size: 1.1rem;
+    font-size: 1.1em;
+    /* text-shadow simplified */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .carousel-inner {
+    /* border-radius simplified */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
 }
 
 .carousel-item {
+    /* transition simplified */
     transition: transform 0.5s ease;
 }
 
@@ -150,21 +191,28 @@ header {
 
 .equipment-card {
     background-color: #fafafa;
+    /* border-radius simplified */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    /* transition simplified */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .equipment-card:hover {
     transform: scale(1.05);
+    /* box-shadow simplified */
+    -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .equipment-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-position: center;
 }
 
 .equipment-info {
@@ -173,13 +221,13 @@ header {
 }
 
 .equipment-info h5 {
-    font-size: 1.4rem;
+    font-size: 1.4em;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .equipment-info p {
-    font-size: 1rem;
+    font-size: 1em;
     color: #555;
 }
 
@@ -204,14 +252,17 @@ header {
 .trainer-image img {
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    object-position: center;
+    /* border-radius simplified */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
     border: 5px solid #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .trainer-info h5 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: bold;
     margin-top: 15px;
 }
@@ -228,18 +279,21 @@ header {
 }
 
 .blockquote {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-style: italic;
     background-color: #333;
     padding: 20px;
     border-left: 5px solid #ff4c4c;
+    /* border-radius simplified */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
 }
 
 .blockquote-footer {
     margin-top: 10px;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .testimonials-section .col-md-6 {
@@ -254,17 +308,20 @@ header {
 }
 
 .contact-link h2 {
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .contact-link a {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     color: white;
     text-decoration: none;
     padding: 10px 25px;
     background-color: #008cba;
+    /* border-radius simplified */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -302,18 +359,20 @@ footer .contact-info a:hover img {
 /* Media Queries */
 @media (max-width: 768px) {
     .video-background h1 {
-        font-size: 2.2rem;
+        font-size: 2.2em;
+        /* Changed rem to em */
     }
 
     .video-background p {
-        font-size: 1rem;
+        font-size: 1em;
     }
 
     .carousel-caption h5 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
+        /* Changed rem to em */
     }
 
     .carousel-caption p {
-        font-size: 1rem;
+        font-size: 1em;
     }
 }
