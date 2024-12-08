@@ -197,7 +197,7 @@ footer p {
 }
 
 .strokes::after {
-    content: "To discover more about the different types of strokes: Freestyle, Backstroke, Breaststroke and Butterfly, hover over each one";
+    content: "To discover more about the different types of strokes: Freestyle, Backstroke, Breaststroke and Butterfly, click or hover over each one";
     display: block; 
     margin-top: 20px;
     font-size: 18px; 
@@ -314,3 +314,8 @@ footer p {
     border: 2px solid rgb(0, 82, 102);
 }
 
+@media (max-width: 768px) {
+    .strcards .stroke-body {
+        opacity: 1;
+    }
+}
