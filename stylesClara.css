@@ -318,4 +318,18 @@ footer p {
     .strcards .stroke-body {
         opacity: 1;
     }
+    
+    .types {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .types-image {
+        margin-bottom: 10px;
+    }
+
+    .text {
+        width: 100%;
+    }
 }
