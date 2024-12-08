@@ -1,4 +1,4 @@
-// Select nav-links and dropdown items and get the active path
+// Select nav-links and dropdown items and get the active link item
 const menuLinks = document.querySelectorAll(".nav-link, .dropdown-item");
 const currentPath = window.location.pathname.split("/").pop();
 
