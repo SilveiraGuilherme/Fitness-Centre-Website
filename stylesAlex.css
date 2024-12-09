@@ -158,6 +158,7 @@ header {
     }
 
     .background-video {
+        position: static;
         width: 100%;
         height: 50vh;
         /* Adjusts video height */
